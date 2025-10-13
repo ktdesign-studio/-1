@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра: Запомни калорийность - FitLife</title>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html">← Главная</a>
+        <a href="games.html">← Игры</a>
+    </nav>
+
+    <!-- Заголовок игры -->
+    <header>
+        <h1>Запомни калорийность продукта</h1>
+        <p>Выберите правильную калорийность для показанного продукта</p>
+    </header>
+
+    <main>
+        <!-- Счетчик прогресса -->
+        <section>
+            <h2>Прогресс</h2>
+            <p>Правильных ответов: <span id="correct-answers">0</span></p>
+            <p>Неправильных ответов: <span id="wrong-answers">0</span></p>
+            <p>Текущий уровень: <span id="current-level">1</span></p>
+        </section>
+
+        <!-- Игровая область -->
+        <section id="game-area">
+            <!-- Карточка продукта -->
+            <div id="product-card">
+                <h3 id="product-name">Яблоко</h3>
+                <img id="product-image" src="placeholder-apple.jpg" alt="Изображение продукта" width="200" height="200">
+                <p>Какая калорийность у этого продукта на 100г?</p>
+            </div>
+
+            <!-- Варианты ответов -->
+            <div id="answer-options">
+                <button class="answer-btn" data-calories="52">52 ккал</button>
+                <button class="answer-btn" data-calories="89">89 ккал</button>
+                <button class="answer-btn" data-calories="120">120 ккал</button>
+                <button class="answer-btn" data-calories="200">200 ккал</button>
+            </div>
+        </section>
+
+        <!-- Область обратной связи -->
+        <section id="feedback-area" style="display: none;">
+            <div id="correct-feedback" style="display: none;">
+                <h3>✅ Правильно!</h3>
+                <p>Отличная работа! Вы правильно определили калорийность продукта.</p>
+                <button id="next-question-btn">Следующий вопрос</button>
+            </div>
+            
+            <div id="wrong-feedback" style="display: none;">
+                <h3>❌ Неправильно</h3>
+                <p>Попробуйте еще раз. Подумайте о том, что это за продукт и насколько он калорийный.</p>
+                <p>Правильный ответ: <span id="correct-answer"></span></p>
+                <button id="try-again-btn">Попробовать еще раз</button>
+                <button id="next-question-after-wrong-btn">Следующий вопрос</button>
+            </div>
+        </section>
+
+        <!-- Результат игры -->
+        <section id="game-result" style="display: none;">
+            <h2>Игра завершена!</h2>
+            <p>Правильных ответов: <span id="final-correct"></span></p>
+            <p>Неправильных ответов: <span id="final-wrong"></span></p>
+            <p>Точность: <span id="accuracy"></span>%</p>
+            <button id="play-again-btn">Играть снова</button>
+            <a href="games.html">← Вернуться к играм</a>
+        </section>
+    </main>
+
+    <!-- JavaScript для игровой логики -->
+    <script>
+        // Данные продуктов для игры
+        const products = [
+            { name: "Яблоко", calories: 52, image: "placeholder-apple.jpg" },
+            { name: "Банан", calories: 89, image: "placeholder-banana.jpg" },
+            { name: "Морковь", calories: 41, image: "placeholder-carrot.jpg" },
+            { name: "Картофель", calories: 77, image: "placeholder-potato.jpg" },
+            { name: "Куриная грудка", calories: 165, image: "placeholder-chicken.jpg" },
+            { name: "Рис", calories: 130, image: "placeholder-rice.jpg" },
+            { name: "Оливковое масло", calories: 884, image: "placeholder-oil.jpg" },
+            { name: "Йогурт", calories: 59, image: "placeholder-yogurt.jpg" }
+        ];
+
+        let currentProductIndex = 0;
+        let correctAnswers = 0;
+        let wrongAnswers = 0;
+        let currentLevel = 1;
+        let gameActive = true;
+
+        // Инициализация игры
+        function initGame() {
+            currentProductIndex = 0;
+            correctAnswers = 0;
+            wrongAnswers = 0;
+            currentLevel = 1;
+            gameActive = true;
+            updateScore();
+            showNextProduct();
+        }
+
+        // Показать следующий продукт
+        function showNextProduct() {
+            if (currentProductIndex >= products.length) {
+                endGame();
+                return;
+            }
+
+            const product = products[currentProductIndex];
+            document.getElementById('product-name').textContent = product.name;
+            document.getElementById('product-image').src = product.image;
+            document.getElementById('product-image').alt = `Изображение ${product.name}`;
+
+            // Генерируем варианты ответов
+            generateAnswerOptions(product.calories);
+
+            // Скрываем области обратной связи
+            document.getElementById('feedback-area').style.display = 'none';
+            document.getElementById('game-area').style.display = 'block';
+        }
+
+        // Генерация вариантов ответов
+        function generateAnswerOptions(correctCalories) {
+            const options = [correctCalories];
+            
+            // Добавляем 3 неправильных варианта
+            while (options.length < 4) {
+                let wrongOption;
+                do {
+                    // Генерируем варианты в разумном диапазоне
+                    const variation = Math.floor(Math.random() * 200) - 100;
+                    wrongOption = Math.max(10, correctCalories + variation);
+                } while (options.includes(wrongOption));
+                options.push(wrongOption);
+            }
+
+            // Перемешиваем варианты
+            options.sort(() => Math.random() - 0.5);
+
+            // Обновляем кнопки
+            const buttons = document.querySelectorAll('.answer-btn');
+            buttons.forEach((button, index) => {
+                button.textContent = `${options[index]} ккал`;
+                button.dataset.calories = options[index];
+                button.disabled = false;
+                button.style.display = 'inline-block';
+            });
+        }
+
+        // Обработка выбора ответа
+        function handleAnswerSelection(selectedCalories) {
+            if (!gameActive) return;
+
+            const correctCalories = products[currentProductIndex].calories;
+            const buttons = document.querySelectorAll('.answer-btn');
+            
+            // Отключаем все кнопки
+            buttons.forEach(btn => btn.disabled = true);
+
+            if (selectedCalories == correctCalories) {
+                // Правильный ответ
+                correctAnswers++;
+                showCorrectFeedback();
+            } else {
+                // Неправильный ответ
+                wrongAnswers++;
+                showWrongFeedback(correctCalories);
+            }
+            
+            updateScore();
+        }
+
+        // Показать обратную связь для правильного ответа
+        function showCorrectFeedback() {
+            document.getElementById('correct-feedback').style.display = 'block';
+            document.getElementById('wrong-feedback').style.display = 'none';
+            document.getElementById('feedback-area').style.display = 'block';
+        }
+
+        // Показать обратную связь для неправильного ответа
+        function showWrongFeedback(correctCalories) {
+            document.getElementById('correct-answer').textContent = `${correctCalories} ккал`;
+            document.getElementById('correct-feedback').style.display = 'none';
+            document.getElementById('wrong-feedback').style.display = 'block';
+            document.getElementById('feedback-area').style.display = 'block';
+        }
+
+        // Переход к следующему вопросу
+        function nextQuestion() {
+            currentProductIndex++;
+            if (currentProductIndex < products.length) {
+                showNextProduct();
+            } else {
+                endGame();
+            }
+        }
+
+        // Завершение игры
+        function endGame() {
+            gameActive = false;
+            document.getElementById('game-area').style.display = 'none';
+            document.getElementById('feedback-area').style.display = 'none';
+            document.getElementById('game-result').style.display = 'block';
+            
+            const totalAnswers = correctAnswers + wrongAnswers;
+            const accuracy = totalAnswers > 0 ? Math.round((correctAnswers / totalAnswers) * 100) : 0;
+            
+            document.getElementById('final-correct').textContent = correctAnswers;
+            document.getElementById('final-wrong').textContent = wrongAnswers;
+            document.getElementById('accuracy').textContent = accuracy;
+        }
+
+        // Обновление счета
+        function updateScore() {
+            document.getElementById('correct-answers').textContent = correctAnswers;
+            document.getElementById('wrong-answers').textContent = wrongAnswers;
+            document.getElementById('current-level').textContent = currentLevel;
+        }
+
+        // Обработчики событий
+        document.addEventListener('DOMContentLoaded', function() {
+            // Обработчики для кнопок ответов
+            document.querySelectorAll('.answer-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const selectedCalories = parseInt(this.dataset.calories);
+                    handleAnswerSelection(selectedCalories);
+                });
+            });
+
+            // Обработчики для кнопок навигации
+            document.getElementById('next-question-btn').addEventListener('click', nextQuestion);
+            document.getElementById('try-again-btn').addEventListener('click', function() {
+                document.getElementById('feedback-area').style.display = 'none';
+                document.getElementById('game-area').style.display = 'block';
+                showNextProduct();
+            });
+            document.getElementById('next-question-after-wrong-btn').addEventListener('click', nextQuestion);
+            document.getElementById('play-again-btn').addEventListener('click', initGame);
+
+            // Инициализация игры
+            initGame();
+        });
+    </script>
+</body>
+</html>
