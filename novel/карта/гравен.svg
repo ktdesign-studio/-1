@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1560" viewBox="0 0 1100 1560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2433"/>
+      <stop offset="0.35" stop-color="#161d2a"/>
+      <stop offset="0.62" stop-color="#10222a"/>
+      <stop offset="1" stop-color="#06090f"/>
+    </linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8d8c8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#b8d8c8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#b8d8c8" stop-opacity="0.55"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9fe3c9" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#9fe3c9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heart" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb46a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffb46a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1100" height="1560" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="550" y="58" text-anchor="middle" font-family="DejaVu Serif" font-size="38" fill="#e8e2d0" letter-spacing="6">ГРАВЕН</text>
+  <text x="550" y="88" text-anchor="middle" font-family="DejaVu Serif" font-size="16" fill="#9aa3b2" font-style="italic">город по вертикали · схема к роману «Город, который забирает»</text>
+  <line x1="180" y1="104" x2="920" y2="104" stroke="#5a6478" stroke-width="1"/>
+
+  <!-- ════════ ВЕРХНИЙ ГРАВЕН ════════ -->
+  <text x="65" y="190" font-family="DejaVu Serif" font-size="20" fill="#d8c890" letter-spacing="3">ВЕРХНИЙ ГРАВЕН</text>
+  <text x="65" y="212" font-family="DejaVu Serif" font-size="13" fill="#8a93a2" font-style="italic">кварталы на сваях · свет всегда ровный</text>
+
+  <!-- dirigible -->
+  <g>
+    <ellipse cx="850" cy="150" rx="85" ry="26" fill="#3a4254" stroke="#5a6478" stroke-width="1.5"/>
+    <rect x="825" y="172" width="50" height="14" rx="4" fill="#2a3142" stroke="#5a6478"/>
+    <line x1="838" y1="172" x2="830" y2="160" stroke="#5a6478"/>
+    <line x1="862" y1="172" x2="870" y2="160" stroke="#5a6478"/>
+    <text x="850" y="130" text-anchor="middle" font-family="DejaVu Serif" font-size="12" fill="#8a93a2" font-style="italic">дирижабельные причалы</text>
+  </g>
+
+  <!-- upper platforms on stilts -->
+  <g stroke="#4a5468" stroke-width="3" fill="none">
+    <line x1="300" y1="330" x2="300" y2="430"/>
+    <line x1="370" y1="330" x2="370" y2="430"/>
+    <line x1="560" y1="330" x2="560" y2="430"/>
+    <line x1="640" y1="330" x2="640" y2="430"/>
+    <line x1="330" y1="430" x2="340" y2="330"/>
+    <line x1="600" y1="430" x2="610" y2="330"/>
+  </g>
+  <rect x="265" y="320" width="150" height="12" fill="#4a5468"/>
+  <rect x="525" y="320" width="160" height="12" fill="#4a5468"/>
+  <!-- bridge between platforms -->
+  <path d="M 415 326 Q 470 300 525 326" stroke="#4a5468" stroke-width="6" fill="none"/>
+
+  <!-- биржа эфира -->
+  <g>
+    <rect x="285" y="240" width="110" height="80" fill="#2e3648" stroke="#5a6478"/>
+    <polygon points="285,240 340,205 395,240" fill="#39425a" stroke="#5a6478"/>
+    <g fill="#ffd87a">
+      <rect x="298" y="255" width="10" height="14"/><rect x="318" y="255" width="10" height="14"/>
+      <rect x="338" y="255" width="10" height="14"/><rect x="358" y="255" width="10" height="14"/>
+      <rect x="298" y="285" width="10" height="14"/><rect x="318" y="285" width="10" height="14"/>
+      <rect x="338" y="285" width="10" height="14"/><rect x="358" y="285" width="10" height="14"/>
+      <rect x="378" y="255" width="8" height="14"/><rect x="378" y="285" width="8" height="14"/>
+    </g>
+    <text x="340" y="350" text-anchor="middle" font-family="DejaVu Serif" font-size="14" fill="#d8c890">биржа эфира</text>
+  </g>
+
+  <!-- мастерские при бирже -->
+  <g>
+    <rect x="540" y="262" width="130" height="58" fill="#2e3648" stroke="#5a6478"/>
+    <rect x="556" y="232" width="14" height="30" fill="#2e3648" stroke="#5a6478"/>
+    <g fill="#ffd87a">
+      <rect x="552" y="276" width="9" height="12"/><rect x="572" y="276" width="9" height="12"/>
+      <rect x="592" y="276" width="9" height="12"/><rect x="612" y="276" width="9" height="12"/>
+      <rect x="632" y="276" width="9" height="12"/><rect x="652" y="276" width="9" height="12"/>
+    </g>
+    <text x="605" y="350" text-anchor="middle" font-family="DejaVu Serif" font-size="14" fill="#d8c890">мастерские (клеймо · У5)</text>
+  </g>
+  <text x="790" y="300" font-family="DejaVu Serif" font-size="12" fill="#b8a76a" font-style="italic">окна не мерцают</text>
+  <text x="790" y="316" font-family="DejaVu Serif" font-size="12" fill="#b8a76a" font-style="italic">в часы голода (У4)</text>
+
+  <!-- ════════ СРЕДИННЫЙ ГОРОД ════════ -->
+  <line x1="60" y1="445" x2="1040" y2="445" stroke="#5a6478" stroke-width="1" stroke-dasharray="6 5"/>
+  <text x="65" y="478" font-family="DejaVu Serif" font-size="20" fill="#c9d2e0" letter-spacing="3">СРЕДИННЫЙ ГОРОД</text>
+  <text x="65" y="500" font-family="DejaVu Serif" font-size="13" fill="#8a93a2" font-style="italic">эфир по талонам · фонари через два на третий</text>
+
+  <!-- Восточная башня -->
+  <g>
+    <polygon points="940,720 960,470 1000,470 1020,720" fill="#2a3245" stroke="#5a6478" stroke-width="1.5"/>
+    <ellipse cx="980" cy="470" rx="20" ry="8" fill="#39425a" stroke="#5a6478"/>
+    <ellipse cx="980" cy="455" rx="9" ry="20" fill="url(#glow)"/>
+    <line x1="952" y1="560" x2="1008" y2="560" stroke="#5a6478"/>
+    <line x1="948" y1="630" x2="1012" y2="630" stroke="#5a6478"/>
+    <text x="980" y="745" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#c9d2e0">Восточная</text>
+    <text x="980" y="762" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#c9d2e0">башня</text>
+    <text x="980" y="780" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#8a93a2" font-style="italic">(Дан · баки без клейма)</text>
+  </g>
+
+  <!-- управа -->
+  <g>
+    <rect x="120" y="560" width="150" height="120" fill="#2a3245" stroke="#5a6478"/>
+    <polygon points="120,560 195,525 270,560" fill="#343d52" stroke="#5a6478"/>
+    <rect x="186" y="640" width="22" height="40" fill="#1a2130"/>
+    <g fill="#cfe3ff" opacity="0.85">
+      <rect x="136" y="580" width="9" height="13"/><rect x="176" y="580" width="9" height="13"/>
+      <rect x="216" y="580" width="9" height="13"/><rect x="246" y="580" width="9" height="13"/>
+      <rect x="136" y="612" width="9" height="13" opacity="0.3"/><rect x="216" y="612" width="9" height="13"/>
+    </g>
+    <!-- полуподвальное окно архива -->
+    <rect x="140" y="664" width="26" height="10" fill="#9fe3c9" opacity="0.7"/>
+    <text x="195" y="700" text-anchor="middle" font-family="DejaVu Serif" font-size="14" fill="#c9d2e0">управа межевания</text>
+    <text x="195" y="716" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#8a93a2" font-style="italic">архив Теи — в полуподвале</text>
+  </g>
+
+  <!-- сборная площадь + сыск -->
+  <g>
+    <rect x="330" y="588" width="120" height="92" fill="#2a3245" stroke="#5a6478"/>
+    <rect x="372" y="556" width="36" height="32" fill="#2a3245" stroke="#5a6478"/>
+    <g fill="#cfe3ff" opacity="0.8">
+      <rect x="344" y="604" width="9" height="13"/><rect x="384" y="604" width="9" height="13" opacity="0.3"/>
+      <rect x="424" y="604" width="9" height="13"/>
+    </g>
+    <text x="390" y="700" text-anchor="middle" font-family="DejaVu Serif" font-size="14" fill="#c9d2e0">сыскное управление</text>
+    <text x="390" y="716" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#8a93a2" font-style="italic">Ройс · камера с выжженным туманом</text>
+    <!-- memorial -->
+    <rect x="520" y="600" width="10" height="40" fill="#4a5468"/>
+    <rect x="508" y="592" width="34" height="10" fill="#4a5468"/>
+    <text x="525" y="660" text-anchor="middle" font-family="DejaVu Serif" font-size="12" fill="#c9d2e0">Сборная пл.</text>
+    <text x="525" y="675" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#8a93a2" font-style="italic">доска о «пожаре»</text>
+  </g>
+
+  <!-- жилые кварталы: Свечной, Жестяная -->
+  <g>
+    <rect x="580" y="572" width="64" height="108" fill="#2a3245" stroke="#5a6478"/>
+    <rect x="652" y="596" width="56" height="84" fill="#262e40" stroke="#5a6478"/>
+    <rect x="716" y="580" width="60" height="100" fill="#2a3245" stroke="#5a6478"/>
+    <g fill="#cfe3ff">
+      <rect x="592" y="588" width="8" height="12" opacity="0.75"/><rect x="616" y="588" width="8" height="12" opacity="0.25"/>
+      <rect x="592" y="620" width="8" height="12" opacity="0.25"/><rect x="664" y="612" width="8" height="12" opacity="0.7"/>
+      <rect x="688" y="612" width="8" height="12" opacity="0.25"/><rect x="728" y="596" width="8" height="12" opacity="0.7"/>
+      <rect x="752" y="596" width="8" height="12" opacity="0.25"/><rect x="728" y="628" width="8" height="12" opacity="0.25"/>
+    </g>
+    <!-- фонарь с лестницей -->
+    <line x1="826" y1="680" x2="826" y2="612" stroke="#4a5468" stroke-width="3"/>
+    <circle cx="826" cy="606" r="7" fill="none" stroke="#4a5468" stroke-width="2"/>
+    <line x1="806" y1="680" x2="820" y2="616" stroke="#6a7488" stroke-width="2"/>
+    <line x1="810" y1="671" x2="819" y2="624" stroke="#6a7488" stroke-width="1"/>
+    <text x="678" y="700" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#c9d2e0">Свечной квартал</text>
+    <text x="678" y="716" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#8a93a2" font-style="italic">фонарь Барта · тёмные окна</text>
+    <text x="836" y="700" text-anchor="middle" font-family="DejaVu Serif" font-size="12" fill="#8a93a2" font-style="italic">Жестяная</text>
+    <text x="836" y="715" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#67707f" font-style="italic">«упразднено»</text>
+  </g>
+
+  <!-- ════════ ЗАБОР / ГРАНИЦА ════════ -->
+  <g>
+    <line x1="60" y1="790" x2="1040" y2="790" stroke="#7a6a4a" stroke-width="3"/>
+    <g stroke="#7a6a4a" stroke-width="2">
+      <line x1="90" y1="790" x2="90" y2="768"/><line x1="160" y1="790" x2="160" y2="768"/>
+      <line x1="230" y1="790" x2="230" y2="768"/><line x1="300" y1="790" x2="300" y2="768"/>
+      <line x1="370" y1="790" x2="370" y2="768"/><line x1="440" y1="790" x2="440" y2="768"/>
+      <line x1="510" y1="790" x2="510" y2="768"/><line x1="580" y1="790" x2="580" y2="768"/>
+      <line x1="650" y1="790" x2="650" y2="768"/><line x1="720" y1="790" x2="720" y2="768"/>
+      <line x1="790" y1="790" x2="790" y2="768"/><line x1="860" y1="790" x2="860" y2="768"/>
+      <line x1="930" y1="790" x2="930" y2="768"/><line x1="1000" y1="790" x2="1000" y2="768"/>
+    </g>
+    <path d="M 60 770 Q 75 762 90 770 T 120 770 T 150 770 T 180 770 T 210 770 T 240 770 T 270 770 T 300 770 T 330 770 T 360 770 T 390 770 T 420 770 T 450 770 T 480 770 T 510 770 T 540 770 T 570 770 T 600 770 T 630 770 T 660 770 T 690 770 T 720 770 T 750 770 T 780 770 T 810 770 T 840 770 T 870 770 T 900 770 T 930 770 T 960 770 T 990 770 T 1020 770 T 1040 770" stroke="#8a7a55" stroke-width="1" fill="none"/>
+    <rect x="430" y="796" width="240" height="26" fill="#1e2535" stroke="#7a6a4a"/>
+    <text x="550" y="814" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#b8a76a">«ПРОХОДА НЕТ · ГРАНИЦА РАССЕЛЁННЫХ КВАРТАЛОВ»</text>
+    <!-- отжатая доска -->
+    <line x1="230" y1="790" x2="238" y2="766" stroke="#b8a76a" stroke-width="2"/>
+    <text x="246" y="780" font-family="DejaVu Serif" font-size="11" fill="#b8a76a" font-style="italic">← отжатая доска (гл. 1)</text>
+  </g>
+
+  <!-- fog band -->
+  <rect x="0" y="826" width="1100" height="90" fill="url(#fog)"/>
+  <ellipse cx="250" cy="870" rx="220" ry="32" fill="#b8d8c8" opacity="0.18"/>
+  <ellipse cx="640" cy="886" rx="280" ry="36" fill="#b8d8c8" opacity="0.16"/>
+  <ellipse cx="900" cy="860" rx="180" ry="28" fill="#b8d8c8" opacity="0.18"/>
+  <text x="550" y="880" text-anchor="middle" font-family="DejaVu Serif" font-size="14" fill="#dceee4" opacity="0.9" font-style="italic">эфирный туман · запах грозы и полыни · «в нём ничего не мокнет»</text>
+
+  <!-- ════════ ИЗНАНКА ════════ -->
+  <text x="65" y="950" font-family="DejaVu Serif" font-size="20" fill="#9fe3c9" letter-spacing="3">ИЗНАНКА</text>
+  <text x="65" y="972" font-family="DejaVu Serif" font-size="13" fill="#7da894" font-style="italic">живые улицы из мёртвых карт</text>
+
+  <!-- лавка Эшера -->
+  <g>
+    <rect x="300" y="960" width="96" height="86" fill="#1c2a2c" stroke="#4a6a60" stroke-width="1.5"/>
+    <polygon points="300,960 348,932 396,960" fill="#243634" stroke="#4a6a60"/>
+    <rect x="334" y="1006" width="26" height="40" fill="#101a1a"/>
+    <rect x="312" y="976" width="18" height="16" fill="#9fe3c9" opacity="0.55"/>
+    <rect x="364" y="976" width="18" height="16" fill="#9fe3c9" opacity="0.55"/>
+    <circle cx="348" cy="952" r="26" fill="url(#glow)"/>
+    <text x="348" y="1068" text-anchor="middle" font-family="DejaVu Serif" font-size="14" fill="#9fe3c9">лавка невозможных вещей</text>
+    <text x="348" y="1084" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#7da894" font-style="italic">Эшер · находят те, кому очень нужно</text>
+  </g>
+
+  <!-- мастерская Иглы -->
+  <g>
+    <rect x="540" y="976" width="74" height="70" fill="#1c2a2c" stroke="#4a6a60"/>
+    <rect x="552" y="990" width="14" height="13" fill="#9fe3c9" opacity="0.4"/>
+    <text x="577" y="1068" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#9fe3c9">мастерская Иглы</text>
+    <text x="577" y="1084" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#7da894" font-style="italic">штопает сети и следы</text>
+  </g>
+
+  <!-- кварталы исконных -->
+  <g fill="#16242a" stroke="#3a5a54">
+    <rect x="730" y="966" width="56" height="80"/>
+    <rect x="796" y="986" width="48" height="60"/>
+    <rect x="854" y="970" width="60" height="76"/>
+    <rect x="120" y="982" width="60" height="64"/>
+  </g>
+  <g fill="#9fe3c9" opacity="0.35">
+    <rect x="742" y="982" width="10" height="12"/><rect x="868" y="986" width="10" height="12"/>
+    <rect x="134" y="996" width="10" height="12"/><rect x="806" y="998" width="9" height="11"/>
+  </g>
+  <text x="822" y="1068" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#9fe3c9">кварталы исконных и забытых</text>
+  <text x="822" y="1084" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#7da894" font-style="italic">«официально здесь никого нет»</text>
+
+  <!-- ════════ ГЛУБИНА ════════ -->
+  <line x1="60" y1="1110" x2="1040" y2="1110" stroke="#3a5a54" stroke-width="1" stroke-dasharray="6 5"/>
+  <text x="65" y="1146" font-family="DejaVu Serif" font-size="20" fill="#6fae9a" letter-spacing="3">ГЛУБИНА</text>
+  <text x="65" y="1168" font-family="DejaVu Serif" font-size="13" fill="#5a8a7a" font-style="italic">сто лет без людей</text>
+  <g stroke="#2f4a46" stroke-width="1.5" fill="#122024">
+    <path d="M 300 1200 L 320 1130 L 345 1200 Z"/>
+    <path d="M 430 1206 L 455 1124 L 484 1206 Z"/>
+    <path d="M 600 1200 L 622 1140 L 648 1200 Z"/>
+    <path d="M 760 1204 L 786 1128 L 815 1204 Z"/>
+  </g>
+  <text x="560" y="1196" text-anchor="middle" font-family="DejaVu Serif" font-size="12" fill="#5a8a7a" font-style="italic">шпили затонувшего города, которым Гравен был раньше</text>
+
+  <!-- ════════ СВЯТИЛИЩЕ ════════ -->
+  <line x1="60" y1="1230" x2="1040" y2="1230" stroke="#3a5a54" stroke-width="1" stroke-dasharray="6 5"/>
+  <text x="65" y="1266" font-family="DejaVu Serif" font-size="20" fill="#caa86a" letter-spacing="3">СВЯТИЛИЩЕ</text>
+  <text x="65" y="1288" font-family="DejaVu Serif" font-size="13" fill="#9a8454" font-style="italic">дно · то, чем Гравен был до Гравена</text>
+
+  <!-- хранилище -->
+  <g>
+    <rect x="300" y="1270" width="220" height="86" rx="8" fill="#1a1f2e" stroke="#6a5a3a" stroke-width="1.5"/>
+    <g stroke="#caa86a" stroke-width="1" fill="none" opacity="0.8">
+      <ellipse cx="330" cy="1312" rx="13" ry="26"/><ellipse cx="366" cy="1312" rx="13" ry="26"/>
+      <ellipse cx="402" cy="1312" rx="13" ry="26"/><ellipse cx="438" cy="1312" rx="13" ry="26"/>
+      <ellipse cx="474" cy="1312" rx="13" ry="26"/>
+    </g>
+    <ellipse cx="438" cy="1312" rx="13" ry="26" fill="url(#heart)"/>
+    <text x="438" y="1296" text-anchor="middle" font-family="DejaVu Serif" font-size="10" fill="#ffb46a">№9</text>
+    <text x="410" y="1378" text-anchor="middle" font-family="DejaVu Serif" font-size="14" fill="#caa86a">хранилище Делла</text>
+    <text x="410" y="1394" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#9a8454" font-style="italic">коконы спящих · «живой эфир»</text>
+  </g>
+
+  <!-- спящее существо -->
+  <g opacity="0.85">
+    <path d="M 620 1360 Q 660 1290 760 1296 Q 880 1304 920 1352 Q 950 1390 900 1408 Q 800 1440 690 1424 Q 610 1410 620 1360 Z" fill="#0e131e" stroke="#3a4254" stroke-width="2"/>
+    <circle cx="870" cy="1340" r="4" fill="#9fe3c9" opacity="0.5"/>
+    <text x="775" y="1378" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#6a7488" font-style="italic">то, чьим дыханием жив город</text>
+    <text x="775" y="1396" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#525c70" font-style="italic">(спит · до эпилога)</text>
+  </g>
+
+  <!-- компас по правому краю -->
+  <g>
+    <line x1="1058" y1="470" x2="1058" y2="1310" stroke="#b8a76a" stroke-width="1.5" stroke-dasharray="2 6"/>
+    <circle cx="1058" cy="452" r="14" fill="none" stroke="#b8a76a" stroke-width="2"/>
+    <line x1="1058" y1="462" x2="1058" y2="444" stroke="#b8a76a" stroke-width="2"/>
+    <polygon points="1058,1322 1051,1306 1065,1306" fill="#b8a76a"/>
+    <text x="1052" y="700" font-family="DejaVu Serif" font-size="12" fill="#b8a76a" transform="rotate(-90 1052 700)">стрелка компаса Дана показывает не направление — глубину (У1)</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="180" y1="1450" x2="920" y2="1450" stroke="#5a6478" stroke-width="1"/>
+  <text x="550" y="1480" text-anchor="middle" font-family="DejaVu Serif" font-size="13" fill="#8a93a2" font-style="italic">«Эфир помнит». Чем ниже — тем гуще туман и тем длиннее память.</text>
+  <text x="550" y="1506" text-anchor="middle" font-family="DejaVu Serif" font-size="11" fill="#67707f">конденсаторных башен — четыре, по сторонам света; показана Восточная (башня Дана)</text>
+</svg>
