@@ -1,54 +1,348 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife - Приложение для здорового питания</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ксения Теселкина — AI Product Manager</title>
+  <meta name="description" content="Ксения Теселкина — AI Product Manager. Внедряю ИИ в продукты и команды, веду корпоративные воркшопы и курсы по работе с нейросетями.">
+  <meta property="og:title" content="Ксения Теселкина — AI Product Manager">
+  <meta property="og:description" content="Внедряю ИИ в продукты и команды. Воркшопы, курсы, консультации.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236C4DF6'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>K</text></svg>">
 </head>
 <body>
-    <!-- Главная страница приложения -->
-    <header>
-        <h1>FitLife</h1>
-        <p>Ваш помощник в здоровом питании и снижении веса</p>
-    </header>
 
-    <main>
-        <!-- Основное меню навигации -->
-        <nav>
-            <h2>Главное меню</h2>
-            <ul>
-                <li><a href="profile.html">Мой профиль</a></li>
-                <li><a href="dashboard.html">Панель управления</a></li>
-                <li><a href="food-diary.html">Дневник питания</a></li>
-                <li><a href="calorie-calculator.html">Калькулятор калорий</a></li>
-                <li><a href="recipes.html">Рецепты</a></li>
-                <li><a href="shopping-list.html">Список покупок</a></li>
-                <li><a href="games.html">Игры</a></li>
-                <li><a href="progress.html">Прогресс</a></li>
-                <li><a href="settings.html">Настройки</a></li>
-            </ul>
-        </nav>
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
 
-        <!-- Краткая статистика для мотивации -->
-        <section>
-            <h2>Ваш прогресс сегодня</h2>
-            <p>Потреблено калорий: 0 / 1500</p>
-            <p>Осталось до цели: 1500 калорий</p>
-        </section>
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
 
-        <!-- Быстрые действия -->
-        <section>
-            <h2>Быстрые действия</h2>
-            <ul>
-                <li><a href="food-diary.html">Добавить прием пищи</a></li>
-                <li><a href="calorie-calculator.html">Рассчитать калории</a></li>
-                <li><a href="games.html">Играть и учиться</a></li>
-            </ul>
-        </section>
-    </main>
+  <!-- Intro loader -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__word"><span>К</span><span>с</span><span>е</span><span>н</span><span>и</span><span>я</span></div>
+  </div>
 
-    <footer>
-        <p>&copy; 2024 FitLife. Все права защищены.</p>
-    </footer>
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <a href="#top" class="header__logo" data-magnetic>
+      <span class="header__logo-mark">KT</span>
+      <span class="header__logo-text" data-i18n="nav.logo">Ксения Теселкина</span>
+    </a>
+    <nav class="header__nav" aria-label="Основная навигация">
+      <a href="#about" class="header__link" data-i18n="nav.about">Обо мне</a>
+      <a href="#experience" class="header__link" data-i18n="nav.experience">Опыт</a>
+      <a href="#workshops" class="header__link" data-i18n="nav.workshops">Воркшопы</a>
+      <a href="#channel" class="header__link" data-i18n="nav.channel">Канал</a>
+      <a href="#contact" class="header__link" data-i18n="nav.contact">Контакты</a>
+    </nav>
+    <div class="header__right">
+      <div class="lang" role="group" aria-label="Выбор языка">
+        <button class="lang__btn is-active" data-lang="ru" type="button">RU</button>
+        <span class="lang__divider">/</span>
+        <button class="lang__btn" data-lang="en" type="button">EN</button>
+      </div>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobmenu" id="mobmenu" aria-hidden="true">
+    <nav class="mobmenu__nav">
+      <a href="#about" class="mobmenu__link" data-i18n="nav.about">Обо мне</a>
+      <a href="#experience" class="mobmenu__link" data-i18n="nav.experience">Опыт</a>
+      <a href="#workshops" class="mobmenu__link" data-i18n="nav.workshops">Воркшопы</a>
+      <a href="#channel" class="mobmenu__link" data-i18n="nav.channel">Канал</a>
+      <a href="#contact" class="mobmenu__link" data-i18n="nav.contact">Контакты</a>
+    </nav>
+    <div class="mobmenu__footer">
+      <a href="https://t.me/ai_s_kseniey" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://www.linkedin.com/in/ktesselkina/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <svg class="hero__scribble" viewBox="0 0 900 600" fill="none" aria-hidden="true">
+        <path class="hero__scribble-path" d="M60 420 C 120 260, 300 240, 320 380 C 340 520, 160 560, 140 420 C 120 280, 340 180, 520 220 C 700 260, 760 420, 640 480 C 520 540, 480 380, 620 320 C 760 260, 860 300, 880 360" stroke="currentColor" stroke-width="52" stroke-linecap="round"/>
+      </svg>
+
+      <div class="hero__inner">
+        <div class="hero__left">
+          <p class="hero__eyebrow reveal-line"><span data-i18n="hero.eyebrow">Ксения Теселкина · Москва</span></p>
+          <h1 class="hero__title">
+            <span class="hero__title-line"><span class="hero__title-word" data-i18n="hero.line1">AI-продакт</span></span>
+            <span class="hero__title-line"><span class="hero__title-word hero__title-word--outline" data-i18n="hero.line2">менеджер</span></span>
+          </h1>
+          <p class="hero__sub reveal" data-i18n="hero.sub">Внедряю ИИ в продукты и рабочие процессы команд. Запустила корпоративные AI‑воркшопы для сотрудников VK и научила сотни специалистов применять нейросети в ежедневной работе.</p>
+          <div class="hero__cta reveal">
+            <a href="#contact" class="btn btn--primary" data-magnetic><span data-i18n="hero.cta1">Обсудить проект</span><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="#workshops" class="btn btn--ghost" data-magnetic><span data-i18n="hero.cta2">Смотреть воркшопы</span></a>
+          </div>
+          <div class="hero__stats reveal">
+            <div class="stat">
+              <span class="stat__num" data-count="15" data-suffix="+">0</span>
+              <span class="stat__label" data-i18n="hero.stat1">лет в IT</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="30" data-suffix="+">0</span>
+              <span class="stat__label" data-i18n="hero.stat2">воркшопов и вебинаров</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="500" data-suffix="+">0</span>
+              <span class="stat__label" data-i18n="hero.stat3">обученных специалистов</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="hero__photo-wrap" data-parallax="0.06">
+            <div class="hero__blob" aria-hidden="true"></div>
+            <figure class="photo photo--hero">
+              <img src="assets/img/hero.jpg" alt="Ксения Теселкина" loading="eager">
+              <figcaption class="photo__ph" aria-hidden="true">
+                <span class="photo__ph-label">hero.jpg</span>
+              </figcaption>
+            </figure>
+            <div class="hero__badge" data-parallax="0.12" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="hero__badge-svg">
+                <defs><path id="circlePath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+                <text class="hero__badge-text"><textPath href="#circlePath" data-i18n="hero.badge">AI · ПРОДУКТ · ВОРКШОПЫ · ОБУЧЕНИЕ ·&#160;</textPath></text>
+              </svg>
+              <span class="hero__badge-center">✳</span>
+            </div>
+            <div class="hero__chip hero__chip--1" data-parallax="0.1"><span data-i18n="hero.chip1">Корп. воркшопы для VK</span></div>
+            <div class="hero__chip hero__chip--2" data-parallax="0.15"><span data-i18n="hero.chip2">Спикер Flow 2022–2023</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scrollhint reveal" aria-hidden="true">
+        <span data-i18n="hero.scroll">листайте</span>
+        <div class="hero__scrollhint-line"></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>AI-стратегия</span><i>✳</i><span>LLM в продукте</span><i>✳</i><span>Промпт-инжиниринг</span><i>✳</i><span>AI-агенты</span><i>✳</i><span>Cursor</span><i>✳</i><span>n8n</span><i>✳</i><span>Обучение команд</span><i>✳</i><span>Product Discovery</span><i>✳</i><span>CJM</span><i>✳</i><span>Требования без галлюцинаций</span><i>✳</i>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>AI-стратегия</span><i>✳</i><span>LLM в продукте</span><i>✳</i><span>Промпт-инжиниринг</span><i>✳</i><span>AI-агенты</span><i>✳</i><span>Cursor</span><i>✳</i><span>n8n</span><i>✳</i><span>Обучение команд</span><i>✳</i><span>Product Discovery</span><i>✳</i><span>CJM</span><i>✳</i><span>Требования без галлюцинаций</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title reveal-words" data-i18n="about.title">Продакт, который говорит с ИИ на ты</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__photo-col">
+          <figure class="photo photo--about reveal" data-tilt>
+            <img src="assets/img/about.jpg" alt="Ксения за работой" loading="lazy">
+            <figcaption class="photo__ph" aria-hidden="true"><span class="photo__ph-label">about.jpg</span></figcaption>
+          </figure>
+        </div>
+        <div class="about__text-col">
+          <p class="about__lead reveal" data-i18n="about.lead">В IT с 2010 года: прошла путь от системного аналитика до продакт-менеджера в VK. Последние два года мой фокус — искусственный интеллект.</p>
+          <p class="about__body reveal" data-i18n="about.body">Внедряю LLM в продуктовые процессы, проектирую AI-агентов и учу команды работать с нейросетями так, чтобы это давало измеримый результат, а не красивые демо. Веду корпоративные курсы и открытые воркшопы: от промпт-инжиниринга до сборки кликабельных прототипов с AI.</p>
+          <ul class="about__facts">
+            <li class="fact reveal">
+              <span class="fact__k">VK</span>
+              <span class="fact__v" data-i18n="about.fact1">Продакт-менеджер, запуск корпоративных AI-воркшопов</span>
+            </li>
+            <li class="fact reveal">
+              <span class="fact__k">Systems.Education</span>
+              <span class="fact__v" data-i18n="about.fact2">Ведущий тренер и соавтор курса про AI-driven разработку требований</span>
+            </li>
+            <li class="fact reveal">
+              <span class="fact__k">Flow 2022–2023</span>
+              <span class="fact__v" data-i18n="about.fact3">Спикер конференций для аналитиков и продактов</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section experience" id="experience">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title reveal-words" data-i18n="exp.title">Опыт</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline__item reveal">
+          <div class="timeline__period" data-i18n="exp.i1.period">сейчас</div>
+          <div class="timeline__body">
+            <h3 class="timeline__role" data-i18n="exp.i1.role">AI Product Manager — VK</h3>
+            <p class="timeline__desc" data-i18n="exp.i1.desc">Развиваю продукт и внедряю AI в процессы команды. Запустила серию корпоративных воркшопов по нейросетям для сотрудников VK.</p>
+            <div class="timeline__tags"><span>AI-агенты</span><span>LLM</span><span data-i18n="exp.i1.tag3">Обучение команд</span></div>
+          </div>
+        </article>
+        <article class="timeline__item reveal">
+          <div class="timeline__period" data-i18n="exp.i2.period">параллельно</div>
+          <div class="timeline__body">
+            <h3 class="timeline__role" data-i18n="exp.i2.role">Ведущий тренер — Systems.Education</h3>
+            <p class="timeline__desc" data-i18n="exp.i2.desc">Соавтор и тренер курса «AI-driven разработка требований и проектирование решений»: учу IT-специалистов создавать требования с помощью ИИ — без галлюцинаций.</p>
+            <div class="timeline__tags"><span data-i18n="exp.i2.tag1">Курсы</span><span data-i18n="exp.i2.tag2">Методология</span><span>AI-driven</span></div>
+          </div>
+        </article>
+        <article class="timeline__item reveal">
+          <div class="timeline__period" data-i18n="exp.i3.period">2022–2023</div>
+          <div class="timeline__body">
+            <h3 class="timeline__role" data-i18n="exp.i3.role">Спикер — конференции Flow</h3>
+            <p class="timeline__desc" data-i18n="exp.i3.desc">Выступления на крупнейшей конференции для системных и бизнес-аналитиков: практика анализа, инструменты, применение AI.</p>
+            <div class="timeline__tags"><span data-i18n="exp.i3.tag1">Доклады</span><span data-i18n="exp.i3.tag2">Мастер-классы</span></div>
+          </div>
+        </article>
+        <article class="timeline__item reveal">
+          <div class="timeline__period" data-i18n="exp.i4.period">до этого</div>
+          <div class="timeline__body">
+            <h3 class="timeline__role" data-i18n="exp.i4.role">Системный и бизнес-аналитик</h3>
+            <p class="timeline__desc" data-i18n="exp.i4.desc">Более 7 лет в анализе: требования, интеграции, финтех-продукты. Эта база помогает внедрять AI туда, где он реально нужен.</p>
+            <div class="timeline__tags"><span data-i18n="exp.i4.tag1">Финтех</span><span data-i18n="exp.i4.tag2">Требования</span><span data-i18n="exp.i4.tag3">Интеграции</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ WORKSHOPS ============ -->
+    <section class="section workshops" id="workshops">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title reveal-words" data-i18n="ws.title">Воркшопы и курсы</h2>
+        <p class="section__sub reveal" data-i18n="ws.sub">Форматы под задачу: от 2-часового интенсива для команды до многонедельного корпоративного курса.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal" data-tilt>
+          <span class="card__num">01</span>
+          <h3 class="card__title" data-i18n="ws.c1.title">Корпоративные AI-воркшопы</h3>
+          <p class="card__desc" data-i18n="ws.c1.desc">Серия обучений для сотрудников компаний: как встроить нейросети в ежедневную работу. Запущено для команд VK.</p>
+          <span class="card__tag" data-i18n="ws.c1.tag">формат: корпоративный</span>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__num">02</span>
+          <h3 class="card__title" data-i18n="ws.c2.title">AI-driven разработка требований</h3>
+          <p class="card__desc" data-i18n="ws.c2.desc">Курс Systems.Education: 15 техник выявления и анализа требований с помощью ИИ — с инженерной строгостью, без галлюцинаций.</p>
+          <span class="card__tag" data-i18n="ws.c2.tag">формат: онлайн-курс</span>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__num">03</span>
+          <h3 class="card__title" data-i18n="ws.c3.title">Кликабельный прототип с AI в Cursor</h3>
+          <p class="card__desc" data-i18n="ws.c3.desc">Воркшоп: собираем работающий прототип приложения без разработчиков — только идея, Cursor и правильные промпты.</p>
+          <span class="card__tag" data-i18n="ws.c3.tag">формат: воркшоп</span>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__num">04</span>
+          <h3 class="card__title" data-i18n="ws.c4.title">AI-ассистенты и скиллы</h3>
+          <p class="card__desc" data-i18n="ws.c4.desc">Практикум по созданию персональных AI-ассистентов: настраиваем агентов под свои задачи и учим их новым навыкам.</p>
+          <span class="card__tag" data-i18n="ws.c4.tag">формат: воркшоп</span>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__num">05</span>
+          <h3 class="card__title" data-i18n="ws.c5.title">Управление требованиями в Notion</h3>
+          <p class="card__desc" data-i18n="ws.c5.desc">Мастер-класс: превращаем Notion в единый источник правды по требованиям — структура, шаблоны, связи.</p>
+          <span class="card__tag" data-i18n="ws.c5.tag">формат: мастер-класс</span>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__num">06</span>
+          <h3 class="card__title" data-i18n="ws.c6.title">Customer Journey Map на практике</h3>
+          <p class="card__desc" data-i18n="ws.c6.desc">Воркшоп: строим CJM, который команда реально использует, а не вешает на стену. От исследования до инсайтов.</p>
+          <span class="card__tag" data-i18n="ws.c6.tag">формат: воркшоп</span>
+        </article>
+      </div>
+      <div class="workshops__cta reveal">
+        <p data-i18n="ws.cta.text">Нужен воркшоп под вашу команду?</p>
+        <a href="#contact" class="btn btn--primary" data-magnetic><span data-i18n="ws.cta.btn">Собрать программу</span><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ CHANNEL ============ -->
+    <section class="section channel" id="channel">
+      <div class="channel__inner">
+        <div class="channel__left">
+          <span class="section__num section__num--light">04</span>
+          <h2 class="channel__title reveal-words" data-i18n="ch.title">AI с Ксенией</h2>
+          <p class="channel__desc reveal" data-i18n="ch.desc">Телеграм-канал про AI без хайпа: разборы инструментов, рабочие промпты, кейсы внедрения нейросетей в продукт и честные выводы — что работает, а что нет.</p>
+          <a href="https://t.me/ai_s_kseniey" target="_blank" rel="noopener" class="btn btn--light reveal" data-magnetic>
+            <span data-i18n="ch.btn">Подписаться в Telegram</span>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21.5 4.5L2.8 11.7c-.8.3-.8 1.4.1 1.6l4.6 1.4 1.8 5.5c.2.7 1.1.9 1.6.3l2.5-2.7 4.8 3.5c.6.4 1.4.1 1.6-.6l3-14.6c.2-.9-.7-1.6-1.3-1.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="channel__right">
+          <div class="tgcard reveal" data-tilt>
+            <div class="tgcard__head">
+              <figure class="photo photo--avatar">
+                <img src="assets/img/avatar.jpg" alt="" loading="lazy">
+                <figcaption class="photo__ph" aria-hidden="true"><span class="photo__ph-label">avatar.jpg</span></figcaption>
+              </figure>
+              <div>
+                <strong data-i18n="ch.card.name">AI с Ксенией</strong>
+                <span data-i18n="ch.card.sub">канал · telegram</span>
+              </div>
+            </div>
+            <div class="tgcard__msg" data-i18n="ch.card.msg1">Протестировала 5 AI-агентов для продуктовых исследований. Спойлер: работает один 🙂</div>
+            <div class="tgcard__msg" data-i18n="ch.card.msg2">Промпт недели: как получить из LLM структуру требований, а не сочинение на вольную тему</div>
+            <div class="tgcard__msg tgcard__msg--accent" data-i18n="ch.card.msg3">Анонс: открытый воркшоп по AI-ассистентам — регистрация открыта</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title reveal-words" data-i18n="ct.title">Давайте поговорим</h2>
+        <p class="section__sub reveal" data-i18n="ct.sub">Корпоративное обучение, воркшоп для команды, консультация по внедрению AI или выступление на вашей конференции.</p>
+      </div>
+      <div class="contact__links">
+        <a href="mailto:k.tesselkina@gmail.com" class="contact__link reveal" data-magnetic>
+          <span class="contact__link-label">Email</span>
+          <span class="contact__link-value">k.tesselkina@gmail.com</span>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://t.me/ai_s_kseniey" target="_blank" rel="noopener" class="contact__link reveal" data-magnetic>
+          <span class="contact__link-label">Telegram</span>
+          <span class="contact__link-value" data-i18n="ct.tg">написать в личку</span>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ktesselkina/" target="_blank" rel="noopener" class="contact__link reveal" data-magnetic>
+          <span class="contact__link-label">LinkedIn</span>
+          <span class="contact__link-value">/in/ktesselkina</span>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__marquee" aria-hidden="true">
+      <div class="footer__marquee-track">
+        <span data-i18n="ft.big">Ксения Теселкина&#160;·&#160;</span><span data-i18n="ft.big2">Ксения Теселкина&#160;·&#160;</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="ft.copy">© 2026 Ксения Теселкина</span>
+      <span class="footer__note" data-i18n="ft.note">сделано руками, с любовью к деталям</span>
+      <a href="#top" class="footer__up" data-magnetic aria-label="Наверх">↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
