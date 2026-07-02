@@ -19,6 +19,7 @@
       "nav.workshops": "Воркшопы",
       "nav.channel": "Канал",
       "nav.contact": "Контакты",
+      "nav.resume": "Резюме",
 
       "hero.eyebrow": "Ксения Теселкина · Москва",
       "hero.line1": "AI-продакт",
@@ -29,9 +30,9 @@
       "hero.stat1": "лет в IT",
       "hero.stat2": "продуктов",
       "hero.stat3": "воркшопов и вебинаров",
-      "hero.badge": "AI · ПРОДУКТ · ВОРКШОПЫ · ОБУЧЕНИЕ · ",
+      "hero.badge": "ВНЕДРЕНИЕ AI · ПРОДУКТЫ · АНАЛИТИКА · ",
       "hero.chip1": "Корп. воркшопы для VK",
-      "hero.chip2": "Спикер Flow 2022–2023",
+      "hero.chip2": "Свои продукты: LMS · iOS · CRM",
       "hero.scroll": "листайте",
 
       "about.title": "Продакт, который говорит с ИИ на ты",
@@ -39,7 +40,8 @@
       "about.body": "За плечами 30+ продуктов — от ГИС и финтеха до образовательных платформ. Сегодня внедряю LLM в продуктовые процессы, проектирую AI-агентов и учу команды работать с нейросетями так, чтобы это давало измеримый результат, а не красивые демо. Веду корпоративные курсы и открытые воркшопы: от промпт-инжиниринга до сборки кликабельных прототипов с AI.",
       "about.fact1": "Менеджер продукта VK ID, запуск корпоративных AI-воркшопов",
       "about.fact2": "Ведущий тренер и соавтор курса про AI-driven разработку требований",
-      "about.fact3": "Спикер конференций для аналитиков и продактов",
+      "about.fact3k": "Вайб-кодинг",
+      "about.fact3": "Разрабатываю и запускаю собственные продукты с AI: LMS, iOS-приложения, CRM",
 
       "exp.title": "Опыт",
       "exp.i1.period": "2021 — сейчас",
@@ -48,14 +50,12 @@
       "exp.i1.tag3": "Обучение команд",
       "exp.i2.period": "с 2018",
       "exp.i2.role": "Тренер и основатель школы — Systems.Education · BeAnalyst",
-      "exp.i2.desc": "Основала школу BeAnalyst для начинающих аналитиков. В Systems.Education — соавтор и ведущий тренер курса «AI-driven разработка требований и проектирование решений»: учу IT-специалистов создавать требования с помощью ИИ — без галлюцинаций.",
+      "exp.i2.desc": "Основала школу BeAnalyst для начинающих аналитиков. В Systems.Education — соавтор и ведущий тренер курса «AI-driven разработка требований и проектирование решений». Спикер конференций для аналитиков (Flow 2022–2024).",
       "exp.i2.tag1": "Курсы",
       "exp.i2.tag2": "Методология",
-      "exp.i3.period": "2022–2023",
-      "exp.i3.role": "Спикер — конференции Flow",
-      "exp.i3.desc": "Выступления на крупнейшей конференции для системных и бизнес-аналитиков: практика анализа, инструменты, применение AI.",
-      "exp.i3.tag1": "Доклады",
-      "exp.i3.tag2": "Мастер-классы",
+      "exp.i3.period": "2024 — сейчас",
+      "exp.i3.role": "Собственные продукты — вайб-кодинг",
+      "exp.i3.desc": "Разрабатываю и запускаю собственные продукты с помощью AI-инструментов: LMS-платформа для моей школы, iOS-приложения, CRM-системы. Полный цикл — от идеи до продакшена, без команды разработки.",
       "exp.i4.period": "2011 — 2021",
       "exp.i4.role": "От разработчика до руководителя отдела аналитики",
       "exp.i4.desc": "C#-разработчик в транспортном моделировании, системный аналитик в 2GIS, руководитель отдела бизнес-анализа в Magora Systems, собственное аналитическое агентство. 20+ проектов для заказчиков из России, США, ОАЭ, ЮАР и Великобритании.",
@@ -81,8 +81,9 @@
       "ws.c6.title": "Customer Journey Map на практике",
       "ws.c6.desc": "Воркшоп: строим CJM, который команда реально использует, а не вешает на стену. От исследования до инсайтов.",
       "ws.c6.tag": "формат: воркшоп",
-      "ws.cta.text": "Нужен воркшоп под вашу команду?",
-      "ws.cta.btn": "Собрать программу",
+      "ws.cta.text": "Хотите на воркшоп или нужна программа под вашу команду?",
+      "ws.cta.btn": "Записаться на обучение",
+      "ws.cta.btn2": "Собрать программу",
 
       "ch.title": "AI с Ксенией",
       "ch.desc": "Телеграм-канал про AI без хайпа: разборы инструментов, рабочие промпты, кейсы внедрения нейросетей в продукт и честные выводы — что работает, а что нет.",
@@ -96,6 +97,7 @@
       "ct.title": "Давайте поговорим",
       "ct.sub": "Корпоративное обучение, воркшоп для команды, консультация по внедрению AI или выступление на вашей конференции.",
       "ct.tg": "@kt_ai_lab",
+      "ct.study": "Обучение",
 
       "ft.big": "Ксения Теселкина · ",
       "ft.big2": "Ксения Теселкина · ",
@@ -111,6 +113,7 @@
       "nav.workshops": "Workshops",
       "nav.channel": "Channel",
       "nav.contact": "Contact",
+      "nav.resume": "Resume",
 
       "hero.eyebrow": "Ksenia Teselkina · Moscow",
       "hero.line1": "AI Product",
@@ -121,9 +124,9 @@
       "hero.stat1": "years in IT",
       "hero.stat2": "products",
       "hero.stat3": "workshops & webinars",
-      "hero.badge": "AI · PRODUCT · WORKSHOPS · TRAINING · ",
+      "hero.badge": "AI ADOPTION · PRODUCTS · ANALYTICS · ",
       "hero.chip1": "Corporate workshops for VK",
-      "hero.chip2": "Speaker at Flow 2022–2023",
+      "hero.chip2": "Own products: LMS · iOS · CRM",
       "hero.scroll": "scroll",
 
       "about.title": "A PM who speaks AI fluently",
@@ -131,7 +134,8 @@
       "about.body": "30+ products behind me — from GIS and fintech to educational platforms. Today I integrate LLMs into product processes, design AI agents and teach teams to work with neural networks in a way that delivers measurable results — not just pretty demos. I run corporate courses and public workshops: from prompt engineering to building clickable prototypes with AI.",
       "about.fact1": "Product manager of VK ID, launched corporate AI workshops",
       "about.fact2": "Lead trainer and co-author of the AI-driven requirements course",
-      "about.fact3": "Conference speaker for analysts and product managers",
+      "about.fact3k": "Vibe-coding",
+      "about.fact3": "Building and shipping my own AI-powered products: an LMS, iOS apps, CRM systems",
 
       "exp.title": "Experience",
       "exp.i1.period": "2021 — now",
@@ -140,14 +144,12 @@
       "exp.i1.tag3": "Team training",
       "exp.i2.period": "since 2018",
       "exp.i2.role": "Trainer & School Founder — Systems.Education · BeAnalyst",
-      "exp.i2.desc": "Founded the BeAnalyst school for aspiring analysts. At Systems.Education — co-author and lead trainer of the “AI-driven requirements engineering and solution design” course: teaching IT specialists to craft requirements with AI — hallucination-free.",
+      "exp.i2.desc": "Founded the BeAnalyst school for aspiring analysts. At Systems.Education — co-author and lead trainer of the “AI-driven requirements engineering and solution design” course. Conference speaker for analysts (Flow 2022–2024).",
       "exp.i2.tag1": "Courses",
       "exp.i2.tag2": "Methodology",
-      "exp.i3.period": "2022–2023",
-      "exp.i3.role": "Speaker — Flow conferences",
-      "exp.i3.desc": "Talks at the largest conference for systems and business analysts: analysis practice, tools, applied AI.",
-      "exp.i3.tag1": "Talks",
-      "exp.i3.tag2": "Masterclasses",
+      "exp.i3.period": "2024 — now",
+      "exp.i3.role": "Own products — vibe-coding",
+      "exp.i3.desc": "Building and shipping my own products with AI tools: an LMS platform for my school, iOS apps, CRM systems. Full cycle — from idea to production, no dev team required.",
       "exp.i4.period": "2011 — 2021",
       "exp.i4.role": "From developer to head of analysis",
       "exp.i4.desc": "C# developer in transport modelling, systems analyst at 2GIS, head of business analysis at Magora Systems, my own analytics agency. 20+ projects for clients from Russia, the USA, the UAE, South Africa and the UK.",
@@ -173,8 +175,9 @@
       "ws.c6.title": "Customer Journey Map in practice",
       "ws.c6.desc": "Workshop: building a CJM your team will actually use, not hang on the wall. From research to insights.",
       "ws.c6.tag": "format: workshop",
-      "ws.cta.text": "Need a workshop tailored to your team?",
-      "ws.cta.btn": "Build a program",
+      "ws.cta.text": "Want to join a workshop, or need a program for your team?",
+      "ws.cta.btn": "Sign up for training",
+      "ws.cta.btn2": "Build a program",
 
       "ch.title": "AI with Ksenia",
       "ch.desc": "A Telegram channel about AI without the hype: tool breakdowns, working prompts, real cases of bringing neural networks into products — and honest takes on what works and what doesn't.",
@@ -188,6 +191,7 @@
       "ct.title": "Let's talk",
       "ct.sub": "Corporate training, a team workshop, an AI adoption consultation or a talk at your conference.",
       "ct.tg": "@kt_ai_lab",
+      "ct.study": "Learning",
 
       "ft.big": "Ksenia Teselkina · ",
       "ft.big2": "Ksenia Teselkina · ",
@@ -197,6 +201,13 @@
       "meta.title": "Ksenia Teselkina — AI Product Manager"
     }
   };
+
+  // page-specific keys (e.g. resume.html) are merged in from window.I18N_EXTRA
+  if (window.I18N_EXTRA) {
+    Object.keys(window.I18N_EXTRA).forEach(function (lang) {
+      if (I18N[lang]) Object.assign(I18N[lang], window.I18N_EXTRA[lang]);
+    });
+  }
 
   var currentLang = localStorage.getItem("lang") || "ru";
 
@@ -212,7 +223,8 @@
         if (dict[key] !== undefined) el.textContent = dict[key];
       });
       document.documentElement.lang = lang;
-      document.title = dict["meta.title"];
+      var titleKey = document.body.getAttribute("data-title-key") || "meta.title";
+      if (dict[titleKey]) document.title = dict[titleKey];
       document.querySelectorAll(".lang__btn").forEach(function (b) {
         b.classList.toggle("is-active", b.getAttribute("data-lang") === lang);
       });
