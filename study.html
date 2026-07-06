@@ -3,174 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Обучение — Ксения Теселкина</title>
-  <meta name="description" content="AI-обучение для команд и специалистов: корпоративные воркшопы, открытые курсы и мастер-классы Ксении Теселкиной.">
-  <meta property="og:title" content="Обучение AI — Ксения Теселкина">
-  <meta property="og:description" content="Корпоративные воркшопы, курсы и мастер-классы по AI: от промптов до собственных прототипов.">
+  <title>Диаграммы, прототипы и презентации с ИИ — воркшоп для аналитиков</title>
+  <meta name="description" content="Практический воркшоп Ксении Теселкиной: рабочий AI-пайплайн для аналитика — от BPMN и Mermaid до интерфейсных прототипов и графов знаний. 28–29 июля, онлайн.">
+  <meta property="og:title" content="Диаграммы, прототипы и презентации с ИИ для аналитиков">
+  <meta property="og:description" content="Практический воркшоп: перестаньте тратить часы на ручной визуал. 28–29 июля, 18:00–21:00 МСК.">
   <meta property="og:image" content="assets/img/og.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23191324'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23E3FF4F' font-family='Arial' font-weight='bold'>K</text></svg>">
-  <script>
-    window.I18N_EXTRA = {
-      ru: {
-        "meta.title.study": "Обучение — Ксения Теселкина",
-        "st.nav.programs": "Программы",
-        "st.nav.formats": "Форматы",
-        "st.nav.how": "Как проходит",
-        "st.nav.faq": "FAQ",
-        "st.nav.signup": "Записаться",
-        "st.nav.portfolio": "← Портфолио",
-
-        "st.hero.eyebrow": "study.ktesselkina.ru",
-        "st.hero.line1": "Учу работать",
-        "st.hero.line2": "с AI",
-        "st.hero.sub": "Воркшопы, курсы и корпоративные программы, после которых нейросети встраиваются в ежедневную работу, а не остаются красивым демо.",
-        "st.hero.cta1": "Выбрать программу",
-        "st.hero.cta2": "Записаться",
-        "st.hero.chip1": "практика с первого часа",
-        "st.hero.chip2": "материалы остаются у вас",
-        "st.hero.chip3": "под задачи вашей команды",
-
-        "st.pr.title": "Программы",
-        "st.pr.sub": "Выберите тему — или соберём программу под вашу команду с нуля.",
-        "st.filter.all": "Все",
-        "st.filter.corporate": "Корпоративные",
-        "st.filter.course": "Курсы",
-        "st.filter.workshop": "Воркшопы",
-        "st.filter.master": "Мастер-классы",
-
-        "st.fm.title": "Форматы",
-        "st.fm.sub": "Один и тот же контент можно упаковать по-разному — под ваш темп и бюджет.",
-        "st.f1.title": "Корпоративная программа",
-        "st.f1.desc": "Серия воркшопов под задачи компании: диагностика процессов, программа под роли команды, домашние задания на реальных кейсах.",
-        "st.f1.li1": "от 2 недель",
-        "st.f1.li2": "до 30 человек в потоке",
-        "st.f1.li3": "материалы и шаблоны промптов",
-        "st.f2.title": "Открытый воркшоп",
-        "st.f2.desc": "Интенсив на 2–4 часа по конкретному навыку: прототип в Cursor, AI-ассистенты, требования с LLM. Максимум практики, ноль воды.",
-        "st.f2.li1": "2–4 часа",
-        "st.f2.li2": "онлайн, в записи — навсегда",
-        "st.f2.li3": "разбор ваших примеров",
-        "st.f3.title": "Индивидуальная консультация",
-        "st.f3.desc": "Персональный разбор: как встроить AI в ваши процессы, какие инструменты выбрать, с чего начать команде.",
-        "st.f3.li1": "60–90 минут",
-        "st.f3.li2": "план внедрения после встречи",
-        "st.f3.li3": "ответы на вопросы ещё неделю",
-
-        "st.how.title": "Как проходит",
-        "st.s1.title": "Заявка",
-        "st.s1.desc": "Пишете в Telegram или оставляете заявку в форме — отвечаю в течение дня.",
-        "st.s2.title": "Созвон",
-        "st.s2.desc": "Коротко обсуждаем задачи, уровень команды и что должно измениться после обучения.",
-        "st.s3.title": "Программа",
-        "st.s3.desc": "Собираю программу под ваши кейсы и согласовываю формат, даты и результат.",
-        "st.s4.title": "Обучение",
-        "st.s4.desc": "Практика на ваших задачах, шаблоны и материалы остаются у команды навсегда.",
-
-        "st.faq.title": "Частые вопросы",
-        "st.q1": "Мы совсем не работали с нейросетями. Подойдёт?",
-        "st.a1": "Да. Программы собираются под уровень группы: для новичков начинаем с основ работы с LLM и первых рабочих промптов — уже к концу первого занятия вы автоматизируете реальную задачу.",
-        "st.q2": "Какие инструменты используем? Нужны ли платные подписки?",
-        "st.a2": "Подбираю инструменты под ваши задачи и ограничения компании: ChatGPT, Claude, Cursor, n8n и другие. Для большинства воркшопов достаточно бесплатных тарифов — про платные скажу заранее.",
-        "st.q3": "Останутся ли материалы после обучения?",
-        "st.a3": "Да, все презентации, шаблоны промптов, чек-листы и записи остаются у вас без ограничений по времени.",
-        "st.q4": "Можно ли обучение под NDA и во внутреннем контуре?",
-        "st.a4": "Можно: работаю с корпоративными требованиями безопасности — подпишем NDA, а программу адаптируем под инструменты, разрешённые в вашей компании.",
-
-        "st.su.title": "Записаться",
-        "st.su.sub": "Оставьте контакты — вернусь с ответом в течение дня. Или напишите сразу в Telegram, так быстрее.",
-        "st.su.name": "Как вас зовут",
-        "st.su.contact": "Email или Telegram",
-        "st.su.about": "Что интересует: программа, формат, размер команды",
-        "st.su.btn": "Отправить заявку",
-        "st.su.tg": "Написать в Telegram",
-        "st.su.note": "Кнопка откроет письмо с заполненной заявкой — останется только нажать «отправить».",
-
-        "meta.title": "Обучение — Ксения Теселкина"
-      },
-      en: {
-        "meta.title.study": "Learning — Ksenia Teselkina",
-        "st.nav.programs": "Programs",
-        "st.nav.formats": "Formats",
-        "st.nav.how": "How it works",
-        "st.nav.faq": "FAQ",
-        "st.nav.signup": "Sign up",
-        "st.nav.portfolio": "← Portfolio",
-
-        "st.hero.eyebrow": "study.ktesselkina.ru",
-        "st.hero.line1": "Teaching teams",
-        "st.hero.line2": "to work with AI",
-        "st.hero.sub": "Workshops, courses and corporate programs after which neural networks become part of everyday work — not just a pretty demo.",
-        "st.hero.cta1": "Choose a program",
-        "st.hero.cta2": "Sign up",
-        "st.hero.chip1": "hands-on from hour one",
-        "st.hero.chip2": "materials are yours to keep",
-        "st.hero.chip3": "tailored to your team",
-
-        "st.pr.title": "Programs",
-        "st.pr.sub": "Pick a topic — or we'll build a program for your team from scratch.",
-        "st.filter.all": "All",
-        "st.filter.corporate": "Corporate",
-        "st.filter.course": "Courses",
-        "st.filter.workshop": "Workshops",
-        "st.filter.master": "Masterclasses",
-
-        "st.fm.title": "Formats",
-        "st.fm.sub": "The same content can be packaged differently — to match your pace and budget.",
-        "st.f1.title": "Corporate program",
-        "st.f1.desc": "A workshop series built around your company's needs: process diagnostics, role-based curriculum, homework on real cases.",
-        "st.f1.li1": "from 2 weeks",
-        "st.f1.li2": "up to 30 people per cohort",
-        "st.f1.li3": "materials & prompt templates",
-        "st.f2.title": "Open workshop",
-        "st.f2.desc": "A 2–4 hour intensive on one concrete skill: a prototype in Cursor, AI assistants, requirements with LLMs. Maximum practice, zero fluff.",
-        "st.f2.li1": "2–4 hours",
-        "st.f2.li2": "online, recording forever",
-        "st.f2.li3": "review of your examples",
-        "st.f3.title": "1:1 consultation",
-        "st.f3.desc": "A personal deep-dive: how to embed AI into your processes, which tools to pick, where your team should start.",
-        "st.f3.li1": "60–90 minutes",
-        "st.f3.li2": "adoption plan after the call",
-        "st.f3.li3": "follow-up questions for a week",
-
-        "st.how.title": "How it works",
-        "st.s1.title": "Request",
-        "st.s1.desc": "Message me on Telegram or leave a request in the form — I reply within a day.",
-        "st.s2.title": "Call",
-        "st.s2.desc": "We briefly discuss your goals, the team's level and what should change after the training.",
-        "st.s3.title": "Program",
-        "st.s3.desc": "I build a program around your cases and agree on format, dates and outcomes.",
-        "st.s4.title": "Training",
-        "st.s4.desc": "Practice on your own tasks; templates and materials stay with the team forever.",
-
-        "st.faq.title": "FAQ",
-        "st.q1": "We've never worked with neural networks. Will it fit?",
-        "st.a1": "Yes. Programs adapt to the group's level: beginners start with LLM basics and their first working prompts — by the end of the first session you'll automate a real task.",
-        "st.q2": "Which tools do we use? Are paid subscriptions required?",
-        "st.a2": "I pick tools to match your goals and company restrictions: ChatGPT, Claude, Cursor, n8n and more. Free tiers are enough for most workshops — I'll flag paid ones in advance.",
-        "st.q3": "Do we keep the materials after the training?",
-        "st.a3": "Yes — all slides, prompt templates, checklists and recordings stay with you, no time limits.",
-        "st.q4": "Can you train under NDA and inside our infrastructure?",
-        "st.a4": "Yes: I work with corporate security requirements — we'll sign an NDA and adapt the program to the tools allowed in your company.",
-
-        "st.su.title": "Sign up",
-        "st.su.sub": "Leave your contacts — I'll get back within a day. Or message me on Telegram, it's faster.",
-        "st.su.name": "Your name",
-        "st.su.contact": "Email or Telegram",
-        "st.su.about": "What you're interested in: program, format, team size",
-        "st.su.btn": "Send request",
-        "st.su.tg": "Message on Telegram",
-        "st.su.note": "The button opens a pre-filled email — just hit “send”.",
-
-        "meta.title": "Learning — Ksenia Teselkina"
-      }
-    };
-  </script>
 </head>
-<body data-title-key="meta.title.study" class="page-study">
+<body class="page-study">
 
   <div class="grain" aria-hidden="true"></div>
   <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
@@ -179,21 +23,17 @@
   <header class="header" id="header">
     <a href="#top" class="header__logo" data-magnetic>
       <span class="header__logo-mark">KT</span>
-      <span class="header__logo-text" data-i18n="nav.logo">Ксения Теселкина</span>
+      <span class="header__logo-text">AI с Ксенией</span>
     </a>
     <nav class="header__nav" aria-label="Основная навигация">
-      <a href="#programs" class="header__link" data-i18n="st.nav.programs">Программы</a>
-      <a href="#formats" class="header__link" data-i18n="st.nav.formats">Форматы</a>
-      <a href="#how" class="header__link" data-i18n="st.nav.how">Как проходит</a>
-      <a href="#faq" class="header__link" data-i18n="st.nav.faq">FAQ</a>
-      <a href="index.html" class="header__link" data-i18n="st.nav.portfolio">← Портфолио</a>
+      <a href="#program" class="header__link">Программа</a>
+      <a href="#results" class="header__link">Результат</a>
+      <a href="#author" class="header__link">Автор</a>
+      <a href="#faq" class="header__link">FAQ</a>
+      <a href="index.html" class="header__link">← Портфолио</a>
     </nav>
     <div class="header__right">
-      <div class="lang" role="group" aria-label="Выбор языка">
-        <button class="lang__btn is-active" data-lang="ru" type="button">RU</button>
-        <span class="lang__divider">/</span>
-        <button class="lang__btn" data-lang="en" type="button">EN</button>
-      </div>
+      <a href="#signup" class="btn btn--primary header__cta" data-magnetic><span>Иду на воркшоп</span></a>
       <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -203,11 +43,12 @@
   <!-- Mobile menu -->
   <div class="mobmenu" id="mobmenu" aria-hidden="true">
     <nav class="mobmenu__nav">
-      <a href="#programs" class="mobmenu__link" data-i18n="st.nav.programs">Программы</a>
-      <a href="#formats" class="mobmenu__link" data-i18n="st.nav.formats">Форматы</a>
-      <a href="#how" class="mobmenu__link" data-i18n="st.nav.how">Как проходит</a>
-      <a href="#signup" class="mobmenu__link" data-i18n="st.nav.signup">Записаться</a>
-      <a href="index.html" class="mobmenu__link" data-i18n="st.nav.portfolio">← Портфолио</a>
+      <a href="#program" class="mobmenu__link">Программа</a>
+      <a href="#results" class="mobmenu__link">Результат</a>
+      <a href="#author" class="mobmenu__link">Автор</a>
+      <a href="#faq" class="mobmenu__link">FAQ</a>
+      <a href="#signup" class="mobmenu__link">Записаться</a>
+      <a href="index.html" class="mobmenu__link">← Портфолио</a>
     </nav>
     <div class="mobmenu__footer">
       <a href="https://t.me/kt_ai_lab" target="_blank" rel="noopener">Telegram</a>
@@ -220,20 +61,32 @@
     <!-- ============ HERO ============ -->
     <section class="shero">
       <div class="shero__inner">
-        <p class="hero__eyebrow reveal-line"><span data-i18n="st.hero.eyebrow">study.ktesselkina.ru</span></p>
-        <h1 class="shero__title">
-          <span class="hero__title-line"><span class="hero__title-word" data-i18n="st.hero.line1">Учу работать</span></span>
-          <span class="hero__title-line"><span class="hero__title-word hero__title-word--outline" data-i18n="st.hero.line2">с AI</span></span>
-        </h1>
-        <p class="hero__sub shero__sub reveal" data-i18n="st.hero.sub">Воркшопы, курсы и корпоративные программы, после которых нейросети встраиваются в ежедневную работу, а не остаются красивым демо.</p>
-        <div class="hero__cta reveal">
-          <a href="#programs" class="btn btn--primary" data-magnetic><span data-i18n="st.hero.cta1">Выбрать программу</span><svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a href="#signup" class="btn btn--ghost" data-magnetic><span data-i18n="st.hero.cta2">Записаться</span></a>
+        <div class="lhero__badge reveal-line">
+          <span class="lhero__pulse" aria-hidden="true"></span>
+          <span>Ближайший поток — 28 и 29 июля · 18:00–21:00 МСК · онлайн</span>
         </div>
-        <div class="shero__chips reveal" aria-hidden="true">
-          <span class="shero__chip" data-i18n="st.hero.chip1">практика с первого часа</span>
-          <span class="shero__chip shero__chip--lime" data-i18n="st.hero.chip2">материалы остаются у вас</span>
-          <span class="shero__chip shero__chip--violet" data-i18n="st.hero.chip3">под задачи вашей команды</span>
+        <h1 class="shero__title lhero__title">
+          <span class="hero__title-line"><span class="hero__title-word">Диаграммы, прототипы</span></span>
+          <span class="hero__title-line"><span class="hero__title-word">и презентации <em class="lhero__em">с ИИ</em></span></span>
+          <span class="hero__title-line"><span class="hero__title-word hero__title-word--outline">для аналитиков</span></span>
+        </h1>
+        <p class="hero__sub shero__sub reveal">Практический воркшоп о том, как перестать тратить часы на ручной визуал и собрать рабочий AI-пайплайн: от BPMN и Mermaid до интерфейсных прототипов и графов знаний.</p>
+        <div class="hero__cta reveal">
+          <a href="#signup" class="btn btn--primary" data-magnetic><span>Иду на воркшоп</span><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#program" class="btn btn--ghost" data-magnetic><span>Посмотреть программу</span></a>
+        </div>
+        <div class="lhero__meta reveal">
+          <div class="lhero__countdown" id="countdown" hidden>
+            <span class="lhero__countdown-label">до старта</span>
+            <span class="lhero__countdown-num" id="cdDays">0</span><span class="lhero__countdown-u">дн</span>
+            <span class="lhero__countdown-num" id="cdHours">0</span><span class="lhero__countdown-u">ч</span>
+            <span class="lhero__countdown-num" id="cdMins">0</span><span class="lhero__countdown-u">мин</span>
+          </div>
+          <div class="hero__stats lhero__stats">
+            <div class="stat"><span class="stat__num">2010</span><span class="stat__label">в IT с этого года</span></div>
+            <div class="stat"><span class="stat__num" data-count="10" data-suffix="+">0</span><span class="stat__label">курсов для аналитиков</span></div>
+            <div class="stat"><span class="stat__num" data-count="300" data-suffix="+">0</span><span class="stat__label">довольных учеников</span></div>
+          </div>
         </div>
       </div>
       <svg class="shero__scribble" viewBox="0 0 600 400" fill="none" aria-hidden="true">
@@ -245,163 +98,264 @@
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
         <div class="marquee__group">
-          <span>Промпт-инжиниринг</span><i>✳</i><span>AI-агенты</span><i>✳</i><span>Cursor</span><i>✳</i><span>ChatGPT</span><i>✳</i><span>Claude</span><i>✳</i><span>n8n</span><i>✳</i><span>Notion</span><i>✳</i><span>CJM</span><i>✳</i><span>Прототипы</span><i>✳</i><span>Требования</span><i>✳</i>
+          <span>BPMN</span><i>✳</i><span>Mermaid</span><i>✳</i><span>UML</span><i>✳</i><span>C4</span><i>✳</i><span>User Flow</span><i>✳</i><span>Wireframe</span><i>✳</i><span>Прототипы</span><i>✳</i><span>Презентации</span><i>✳</i><span>Графы знаний</span><i>✳</i><span>AI-пайплайн</span><i>✳</i>
         </div>
         <div class="marquee__group" aria-hidden="true">
-          <span>Промпт-инжиниринг</span><i>✳</i><span>AI-агенты</span><i>✳</i><span>Cursor</span><i>✳</i><span>ChatGPT</span><i>✳</i><span>Claude</span><i>✳</i><span>n8n</span><i>✳</i><span>Notion</span><i>✳</i><span>CJM</span><i>✳</i><span>Прототипы</span><i>✳</i><span>Требования</span><i>✳</i>
+          <span>BPMN</span><i>✳</i><span>Mermaid</span><i>✳</i><span>UML</span><i>✳</i><span>C4</span><i>✳</i><span>User Flow</span><i>✳</i><span>Wireframe</span><i>✳</i><span>Прототипы</span><i>✳</i><span>Презентации</span><i>✳</i><span>Графы знаний</span><i>✳</i><span>AI-пайплайн</span><i>✳</i>
         </div>
       </div>
     </div>
 
-    <!-- ============ PROGRAMS ============ -->
-    <section class="section" id="programs">
-      <div class="section__head">
-        <span class="section__num">01</span>
-        <h2 class="section__title reveal-words" data-i18n="st.pr.title">Программы</h2>
-        <p class="section__sub reveal" data-i18n="st.pr.sub">Выберите тему — или соберём программу под вашу команду с нуля.</p>
-      </div>
-
-      <div class="filters reveal" role="group" aria-label="Фильтр программ">
-        <button class="filters__btn is-active" data-filter="all" type="button" data-i18n="st.filter.all">Все</button>
-        <button class="filters__btn" data-filter="corporate" type="button" data-i18n="st.filter.corporate">Корпоративные</button>
-        <button class="filters__btn" data-filter="course" type="button" data-i18n="st.filter.course">Курсы</button>
-        <button class="filters__btn" data-filter="workshop" type="button" data-i18n="st.filter.workshop">Воркшопы</button>
-        <button class="filters__btn" data-filter="master" type="button" data-i18n="st.filter.master">Мастер-классы</button>
-      </div>
-
-      <div class="cards" id="programGrid">
-        <a class="card reveal" data-tilt data-format="corporate" href="#signup">
-          <span class="card__num">01</span>
-          <h3 class="card__title" data-i18n="ws.c1.title">Корпоративные AI-воркшопы</h3>
-          <p class="card__desc" data-i18n="ws.c1.desc">Серия обучений для сотрудников компаний: как встроить нейросети в ежедневную работу. Запущено для команд VK.</p>
-          <span class="card__foot"><span class="card__tag" data-i18n="ws.c1.tag">формат: корпоративный</span><span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
-        </a>
-        <a class="card reveal" data-tilt data-format="course" href="https://systems.education/sard" target="_blank" rel="noopener">
-          <span class="card__num">02</span>
-          <h3 class="card__title" data-i18n="ws.c2.title">AI-driven разработка требований</h3>
-          <p class="card__desc" data-i18n="ws.c2.desc">Курс Systems.Education: 15 техник выявления и анализа требований с помощью ИИ — с инженерной строгостью, без галлюцинаций.</p>
-          <span class="card__foot"><span class="card__tag" data-i18n="ws.c2.tag">формат: онлайн-курс</span><span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
-        </a>
-        <a class="card reveal" data-tilt data-format="workshop" href="#signup">
-          <span class="card__num">03</span>
-          <h3 class="card__title" data-i18n="ws.c3.title">Кликабельный прототип с AI в Cursor</h3>
-          <p class="card__desc" data-i18n="ws.c3.desc">Воркшоп: собираем работающий прототип приложения без разработчиков — только идея, Cursor и правильные промпты.</p>
-          <span class="card__foot"><span class="card__tag" data-i18n="ws.c3.tag">формат: воркшоп</span><span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
-        </a>
-        <a class="card reveal" data-tilt data-format="workshop" href="https://workshop3-eight.vercel.app/" target="_blank" rel="noopener">
-          <span class="card__num">04</span>
-          <h3 class="card__title" data-i18n="ws.c4.title">AI-ассистенты и скиллы</h3>
-          <p class="card__desc" data-i18n="ws.c4.desc">Практикум по созданию персональных AI-ассистентов: настраиваем агентов под свои задачи и учим их новым навыкам.</p>
-          <span class="card__foot"><span class="card__tag" data-i18n="ws.c4.tag">формат: воркшоп</span><span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
-        </a>
-        <a class="card reveal" data-tilt data-format="master" href="https://www.youtube.com/watch?v=b4bGbEPmNdo" target="_blank" rel="noopener">
-          <span class="card__num">05</span>
-          <h3 class="card__title" data-i18n="ws.c5.title">Управление требованиями в Notion</h3>
-          <p class="card__desc" data-i18n="ws.c5.desc">Мастер-класс: превращаем Notion в единый источник правды по требованиям — структура, шаблоны, связи.</p>
-          <span class="card__foot"><span class="card__tag" data-i18n="ws.c5.tag">формат: мастер-класс</span><span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
-        </a>
-        <a class="card reveal" data-tilt data-format="workshop" href="#signup">
-          <span class="card__num">06</span>
-          <h3 class="card__title" data-i18n="ws.c6.title">Customer Journey Map на практике</h3>
-          <p class="card__desc" data-i18n="ws.c6.desc">Воркшоп: строим CJM, который команда реально использует, а не вешает на стену. От исследования до инсайтов.</p>
-          <span class="card__foot"><span class="card__tag" data-i18n="ws.c6.tag">формат: воркшоп</span><span class="card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
-        </a>
+    <!-- ============ PAIN ============ -->
+    <section class="section pain">
+      <div class="pain__grid">
+        <div>
+          <span class="section__num">01</span>
+          <h2 class="section__title reveal-words">Вы понимаете задачу за час, а оформляете её до ночи…</h2>
+        </div>
+        <div class="pain__text">
+          <p class="reveal">Вы уже поняли процесс. У вас в голове готовая логика, связи, крайние случаи.</p>
+          <p class="reveal">А дальше начинается другая работа. Открыть draw.io и двигать прямоугольники, чтобы линии не пересекались. Перенести ту же логику в sequence-диаграмму. Нарисовать с десяток экранов в разных состояниях. Упаковать всё в презентацию, потому что на Zoom'е без слайдов не слушают.</p>
+          <p class="pain__accent reveal">Самая ценная часть работы — анализ — занимает у вас час. А оформление, в котором уже нет никакой мысли, съедает вечер. И так в каждой задаче.</p>
+        </div>
       </div>
     </section>
 
-    <!-- ============ FORMATS ============ -->
-    <section class="section formats" id="formats">
+    <!-- ============ FIT ============ -->
+    <section class="section fit">
       <div class="section__head">
         <span class="section__num">02</span>
-        <h2 class="section__title reveal-words" data-i18n="st.fm.title">Форматы</h2>
-        <p class="section__sub reveal" data-i18n="st.fm.sub">Один и тот же контент можно упаковать по-разному — под ваш темп и бюджет.</p>
+        <h2 class="section__title reveal-words">Честно: кому это точно зайдёт, а кому — нет</h2>
+        <p class="section__sub reveal">Чтобы вы не потратили 15 000 ₽ зря — прочитайте эти списки.</p>
       </div>
-      <div class="fmts">
-        <div class="fmt reveal" data-tilt>
-          <span class="fmt__num">I</span>
-          <h3 class="fmt__title" data-i18n="st.f1.title">Корпоративная программа</h3>
-          <p class="fmt__desc" data-i18n="st.f1.desc">Серия воркшопов под задачи компании: диагностика процессов, программа под роли команды, домашние задания на реальных кейсах.</p>
-          <ul class="fmt__list">
-            <li data-i18n="st.f1.li1">от 2 недель</li>
-            <li data-i18n="st.f1.li2">до 30 человек в потоке</li>
-            <li data-i18n="st.f1.li3">материалы и шаблоны промптов</li>
+      <div class="fit__grid">
+        <div class="fit__col fit__col--yes reveal" data-tilt>
+          <h3 class="fit__title"><span class="fit__mark fit__mark--yes">✓</span>Зайдёт, если:</h3>
+          <ul>
+            <li>вы системный, продуктовый, бизнес-аналитик или менеджер продукта — и BPMN/UML/wireframe ваша рутина</li>
+            <li>вы уже пробовали ChatGPT для работы, но результат был «ну такое» — и бросили</li>
+            <li>вы хотите за 2 вечера получить готовый пайплайн: от заметок до диаграмм и слайдов</li>
+            <li>вы устали от ручной работы в Figma / draw.io / PowerPoint и хотите убрать оттуда 80% рутины</li>
+            <li>у вас нет дизайнера под боком, а презентацию или схему сдавать уже завтра</li>
           </ul>
         </div>
-        <div class="fmt fmt--accent reveal" data-tilt>
-          <span class="fmt__num">II</span>
-          <h3 class="fmt__title" data-i18n="st.f2.title">Открытый воркшоп</h3>
-          <p class="fmt__desc" data-i18n="st.f2.desc">Интенсив на 2–4 часа по конкретному навыку: прототип в Cursor, AI-ассистенты, требования с LLM. Максимум практики, ноль воды.</p>
-          <ul class="fmt__list">
-            <li data-i18n="st.f2.li1">2–4 часа</li>
-            <li data-i18n="st.f2.li2">онлайн, в записи — навсегда</li>
-            <li data-i18n="st.f2.li3">разбор ваших примеров</li>
-          </ul>
-        </div>
-        <div class="fmt reveal" data-tilt>
-          <span class="fmt__num">III</span>
-          <h3 class="fmt__title" data-i18n="st.f3.title">Индивидуальная консультация</h3>
-          <p class="fmt__desc" data-i18n="st.f3.desc">Персональный разбор: как встроить AI в ваши процессы, какие инструменты выбрать, с чего начать команде.</p>
-          <ul class="fmt__list">
-            <li data-i18n="st.f3.li1">60–90 минут</li>
-            <li data-i18n="st.f3.li2">план внедрения после встречи</li>
-            <li data-i18n="st.f3.li3">ответы на вопросы ещё неделю</li>
+        <div class="fit__col fit__col--no reveal" data-tilt>
+          <h3 class="fit__title"><span class="fit__mark fit__mark--no">✗</span>Скорее не ваш вариант, если:</h3>
+          <ul>
+            <li>вы ищете базовый курс по нотациям — BPMN/UML с нуля (здесь про ускорение, не про основы)</li>
+            <li>вы ждёте «курс по ChatGPT в целом» без привязки к задачам аналитика</li>
+            <li>вы готовы только смотреть — воркшоп практический, будем делать в прямом эфире</li>
+            <li>у вас уже выстроен AI-пайплайн в команде и дизайнер решает визуал</li>
+            <li>вы не готовы поставить 2–3 AI-сервиса (все бесплатные тарифы подойдут, но аккаунты нужны)</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ============ HOW ============ -->
-    <section class="section how" id="how">
+    <!-- ============ SPEED / RESULTS ============ -->
+    <section class="section speed" id="results">
       <div class="section__head">
         <span class="section__num">03</span>
-        <h2 class="section__title reveal-words" data-i18n="st.how.title">Как проходит</h2>
+        <h2 class="section__title reveal-words">Что вы сможете создавать за минуты</h2>
+        <p class="section__sub reveal">Вместо часов ручной отрисовки — быстрые и структурные черновики, готовые для обсуждения с командой.</p>
       </div>
-      <ol class="steps">
-        <li class="step reveal">
-          <span class="step__num">01</span>
-          <h3 class="step__title" data-i18n="st.s1.title">Заявка</h3>
-          <p class="step__desc" data-i18n="st.s1.desc">Пишете в Telegram или оставляете заявку в форме — отвечаю в течение дня.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__num">02</span>
-          <h3 class="step__title" data-i18n="st.s2.title">Созвон</h3>
-          <p class="step__desc" data-i18n="st.s2.desc">Коротко обсуждаем задачи, уровень команды и что должно измениться после обучения.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__num">03</span>
-          <h3 class="step__title" data-i18n="st.s3.title">Программа</h3>
-          <p class="step__desc" data-i18n="st.s3.desc">Собираю программу под ваши кейсы и согласовываю формат, даты и результат.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__num">04</span>
-          <h3 class="step__title" data-i18n="st.s4.title">Обучение</h3>
-          <p class="step__desc" data-i18n="st.s4.desc">Практика на ваших задачах, шаблоны и материалы остаются у команды навсегда.</p>
-        </li>
-      </ol>
+      <div class="speed__cards">
+        <div class="speedcard reveal" data-tilt>
+          <span class="speedcard__time">2 мин</span>
+          <h3>Диаграмма из текстового ТЗ</h3>
+          <p>Sequence-диаграмма из текстового ТЗ — вместо часа в draw.io.</p>
+        </div>
+        <div class="speedcard speedcard--accent reveal" data-tilt>
+          <span class="speedcard__time">5 мин</span>
+          <h3>Wireframe экранов</h3>
+          <p>Wireframe ключевых экранов прямо из требований.</p>
+        </div>
+        <div class="speedcard reveal" data-tilt>
+          <span class="speedcard__time">3 мин</span>
+          <h3>Слайд для стейкхолдера</h3>
+          <p>Слайд презентации из аналитического материала.</p>
+        </div>
+      </div>
+      <div class="speed__list reveal">
+        <h3 class="speed__list-title">Что заберёт на себя ИИ:</h3>
+        <ul>
+          <li>BPMN и sequence из текста — за минуты, не часы</li>
+          <li>Wireframe экранов по описанию требований</li>
+          <li>Структура и черновик слайдов для стейкхолдеров</li>
+          <li>Перевод логики между нотациями без ручного переписывания</li>
+          <li>Граф знаний из сырых требований</li>
+        </ul>
+        <p class="speed__free">А у вас появляется свободное время — на себя, детей и хобби ✳</p>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAM ============ -->
+    <section class="section program" id="program">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title reveal-words">Программа воркшопа</h2>
+        <p class="section__sub reveal">Работаем на сквозном кейсе: мобильное приложение для создания клубов по интересам.</p>
+      </div>
+
+      <div class="days">
+        <article class="day reveal">
+          <header class="day__head">
+            <span class="day__label">День 1</span>
+            <h3 class="day__title">Диаграммы и прототипы</h3>
+            <span class="day__date">28 июля · 18:00–21:00 МСК</span>
+          </header>
+          <div class="day__modules">
+            <div class="module">
+              <span class="module__num">1</span>
+              <div>
+                <h4>Системы и процессы</h4>
+                <ul>
+                  <li>BPMN, Mermaid, UML, C4, user flow</li>
+                  <li>Подходы text-to-diagram и diagram-as-code</li>
+                  <li><b>Практика:</b> сборка BPMN процесса и перевод в UML для другой аудитории</li>
+                </ul>
+              </div>
+            </div>
+            <div class="module">
+              <span class="module__num">2</span>
+              <div>
+                <h4>Прототипы интерфейсов</h4>
+                <ul>
+                  <li>Как превращать user flow в wireframe</li>
+                  <li>Проектирование экранов, UX-паттерны, кликабельные прототипы, дизайн-система</li>
+                  <li><b>Практика:</b> прототипы ключевых экранов (лента, создание клуба)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="day day--accent reveal">
+          <header class="day__head">
+            <span class="day__label">День 2</span>
+            <h3 class="day__title">Презентации и пайплайн</h3>
+            <span class="day__date">29 июля · 18:00–21:00 МСК</span>
+          </header>
+          <div class="day__modules">
+            <div class="module">
+              <span class="module__num">3</span>
+              <div>
+                <h4>Презентации и графы знаний</h4>
+                <ul>
+                  <li>Презентация проекта и отчёт о проделанной работе из заметок и требований</li>
+                  <li>Граф сущностей: роли, связи, зависимости</li>
+                  <li><b>Практика:</b> сборка мини-презентации и графа знаний приложения</li>
+                </ul>
+              </div>
+            </div>
+            <div class="module">
+              <span class="module__num">4</span>
+              <div>
+                <h4>Рабочий AI-пайплайн</h4>
+                <ul>
+                  <li>Сборка инструментов в единый экономящий время процесс</li>
+                  <li>Чеклист ревью AI-сгенерированных артефактов, авто-ревью</li>
+                  <li><b>Финал:</b> готовый процесс применения ИИ в вашей работе, рекомендации по адаптации под ваши проекты</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="outcome reveal">
+        <h3 class="outcome__title">На выходе у вас будет</h3>
+        <ul class="outcome__list">
+          <li>BPMN из текстовых требований</li>
+          <li>Сгенерированные диаграммы UML и C4</li>
+          <li>Wireframe экранов</li>
+          <li>10-слайдовая презентация для стейкхолдера</li>
+          <li>ИИ-агент, которого можно донастроить под ваш проект</li>
+        </ul>
+        <p class="outcome__note">Всё — в вашей папке, всё — сделано вашими руками.</p>
+      </div>
+
+      <div class="tools reveal">
+        <div class="tools__col">
+          <h3 class="tools__title">В чём работаем — любая IDE с ИИ:</h3>
+          <div class="tools__chips">
+            <span>Claude Cowork</span><span>Cursor</span><span>Codex</span><span>VS Code + Qwen</span>
+          </div>
+        </div>
+        <div class="tools__col">
+          <h3 class="tools__title">Сравним с альтернативами:</h3>
+          <div class="tools__chips tools__chips--alt">
+            <span>NotebookLM</span><span>Google Stitch</span><span>Claude Design</span><span>Figma Make</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AUTHOR ============ -->
+    <section class="section author" id="author">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title reveal-words">Кто ведёт воркшоп</h2>
+      </div>
+      <div class="author__grid">
+        <div class="author__photo-col reveal" data-tilt>
+          <figure class="photo photo--about">
+            <img src="assets/img/about.webp" alt="Ксения Теселкина" loading="lazy">
+            <figcaption class="photo__ph" aria-hidden="true"><span class="photo__ph-label">about.webp</span></figcaption>
+          </figure>
+        </div>
+        <div class="author__body">
+          <h3 class="author__name reveal">Ксения Теселкина</h3>
+          <p class="author__meta reveal">15+ лет в IT · VK, 2GIS, экосистемные сервисы · руководила отделом аналитиков · 40+ проектов</p>
+          <ul class="author__facts">
+            <li class="fact reveal">
+              <span class="fact__k">Продукт</span>
+              <span class="fact__v">Старший менеджер продукта в VK: управление комплексными продуктами и командами</span>
+            </li>
+            <li class="fact reveal">
+              <span class="fact__k">Анализ</span>
+              <span class="fact__v">Фулстек-аналитик с опытом 15+ лет: огромный бэкграунд на разных аналитических ролях</span>
+            </li>
+            <li class="fact reveal">
+              <span class="fact__k">Кругозор</span>
+              <span class="fact__v">Экосистемные сервисы, e-commerce, финтех и применение нейросетей в анализе</span>
+            </li>
+          </ul>
+          <a href="https://t.me/kt_ai_lab" target="_blank" rel="noopener" class="btn btn--ghost reveal" data-magnetic><span>Читать разборы кейсов в Telegram → @kt_ai_lab</span></a>
+        </div>
+      </div>
     </section>
 
     <!-- ============ FAQ ============ -->
     <section class="section faq" id="faq">
       <div class="section__head">
-        <span class="section__num">04</span>
-        <h2 class="section__title reveal-words" data-i18n="st.faq.title">Частые вопросы</h2>
+        <span class="section__num">06</span>
+        <h2 class="section__title reveal-words">Частые вопросы</h2>
       </div>
       <div class="acc">
         <details class="acc__item reveal">
-          <summary class="acc__q"><span data-i18n="st.q1">Мы совсем не работали с нейросетями. Подойдёт?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
-          <p class="acc__a" data-i18n="st.a1">Да. Программы собираются под уровень группы: для новичков начинаем с основ работы с LLM и первых рабочих промптов — уже к концу первого занятия вы автоматизируете реальную задачу.</p>
+          <summary class="acc__q"><span>Будет ли запись воркшопа?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Да, запись обоих дней входит в стоимость — вместе с презентацией, чеклистами и шаблонами промптов она останется у вас навсегда.</p>
         </details>
         <details class="acc__item reveal">
-          <summary class="acc__q"><span data-i18n="st.q2">Какие инструменты используем? Нужны ли платные подписки?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
-          <p class="acc__a" data-i18n="st.a2">Подбираю инструменты под ваши задачи и ограничения компании: ChatGPT, Claude, Cursor, n8n и другие. Для большинства воркшопов достаточно бесплатных тарифов — про платные скажу заранее.</p>
+          <summary class="acc__q"><span>Нужен ли опыт с BPMN / UML / wireframe?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Да, базовый: воркшоп про ускорение работы с нотациями, а не про их изучение с нуля. Если BPMN/UML/wireframe — ваша рутина, вам подойдёт.</p>
         </details>
         <details class="acc__item reveal">
-          <summary class="acc__q"><span data-i18n="st.q3">Останутся ли материалы после обучения?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
-          <p class="acc__a" data-i18n="st.a3">Да, все презентации, шаблоны промптов, чек-листы и записи остаются у вас без ограничений по времени.</p>
+          <summary class="acc__q"><span>Нужны ли платные подписки на AI-сервисы?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Нет, бесплатных тарифов достаточно. Понадобится заранее зарегистрировать аккаунты в 2–3 AI-сервисах — пришлю список после оплаты.</p>
         </details>
         <details class="acc__item reveal">
-          <summary class="acc__q"><span data-i18n="st.q4">Можно ли обучение под NDA и во внутреннем контуре?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
-          <p class="acc__a" data-i18n="st.a4">Можно: работаю с корпоративными требованиями безопасности — подпишем NDA, а программу адаптируем под инструменты, разрешённые в вашей компании.</p>
+          <summary class="acc__q"><span>Можно оплатить от ИП или юрлица?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Да, работаю как ИП — выставлю счёт и закрывающие документы. Напишите в Telegram @kt_ai_lab, согласуем детали.</p>
+        </details>
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Что, если я пропущу один из дней?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Ничего страшного: посмотрите запись, а вопросы по практике зададите на втором дне или в чате — обратная связь по вашим артефактам входит в воркшоп.</p>
+        </details>
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Что, если воркшоп не подойдёт?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Действует политика возврата — условия описаны в оферте. Если сомневаетесь, начните со списков «кому зайдёт / кому нет» выше или напишите мне в Telegram.</p>
         </details>
       </div>
     </section>
@@ -410,64 +364,88 @@
     <section class="section signup" id="signup">
       <div class="signup__inner">
         <div class="signup__left">
-          <span class="section__num section__num--light">05</span>
-          <h2 class="channel__title reveal-words" data-i18n="st.su.title">Записаться</h2>
-          <p class="channel__desc reveal" data-i18n="st.su.sub">Оставьте контакты — вернусь с ответом в течение дня. Или напишите сразу в Telegram, так быстрее.</p>
-          <a href="https://t.me/kt_ai_lab" target="_blank" rel="noopener" class="btn btn--light reveal" data-magnetic>
-            <span data-i18n="st.su.tg">Написать в Telegram</span>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M21.5 4.5L2.8 11.7c-.8.3-.8 1.4.1 1.6l4.6 1.4 1.8 5.5c.2.7 1.1.9 1.6.3l2.5-2.7 4.8 3.5c.6.4 1.4.1 1.6-.6l3-14.6c.2-.9-.7-1.6-1.3-1.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          </a>
+          <span class="section__num section__num--light">07</span>
+          <h2 class="channel__title reveal-words">Готовы ускорить свою работу?</h2>
+          <p class="channel__desc reveal">Ближайший поток: <b>28 и 29 июля, 18:00–21:00 МСК</b>, онлайн.</p>
+          <ul class="signup__includes reveal">
+            <li>2 дня практических онлайн-сессий</li>
+            <li>Готовые шаблоны промптов</li>
+            <li>Чеклисты, презентация и запись воркшопа</li>
+            <li>Обратная связь по вашим артефактам</li>
+          </ul>
+          <p class="signup__after reveal">После оплаты вы получите чек на email и инструкции по доступу к материалам.</p>
         </div>
         <form class="sform reveal" id="signupForm">
           <label class="sform__field">
-            <span class="sform__label" data-i18n="st.su.name">Как вас зовут</span>
-            <input type="text" name="name" required autocomplete="name">
+            <span class="sform__label">Имя и Фамилия</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Иван Иванов">
           </label>
           <label class="sform__field">
-            <span class="sform__label" data-i18n="st.su.contact">Email или Telegram</span>
-            <input type="text" name="contact" required>
+            <span class="sform__label">Email</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="name@company.ru">
           </label>
           <label class="sform__field">
-            <span class="sform__label" data-i18n="st.su.about">Что интересует: программа, формат, размер команды</span>
-            <textarea name="about" rows="4"></textarea>
+            <span class="sform__label">Telegram (необязательно)</span>
+            <input type="text" name="telegram" placeholder="@username или +7 ...">
           </label>
-          <button type="submit" class="btn btn--primary sform__submit" data-magnetic><span data-i18n="st.su.btn">Отправить заявку</span><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          <p class="sform__note" data-i18n="st.su.note">Кнопка откроет письмо с заполненной заявкой — останется только нажать «отправить».</p>
+          <label class="sform__field">
+            <span class="sform__label">Промокод (если есть)</span>
+            <input type="text" name="promo" placeholder="ВВЕДИТЕ ПРОМОКОД">
+          </label>
+          <div class="sform__price">
+            <span>К оплате:</span>
+            <strong>15 000 ₽</strong>
+            <small>Оплата через ТБанк · можно частями без переплат</small>
+          </div>
+          <button type="submit" class="btn btn--primary sform__submit" data-magnetic><span>Оплатить участие — 15 000 ₽</span><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="sform__note">Нажимая кнопку, вы соглашаетесь с условиями <a href="#">Оферты</a>, <a href="#">Политикой обработки ПД</a> и <a href="#">возврата средств</a>.</p>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- Sticky CTA (mobile) -->
+  <div class="stickycta" id="stickyCta" aria-hidden="true">
+    <div class="stickycta__text"><b>28–29 июля</b> · 18:00 МСК</div>
+    <a href="#signup" class="btn btn--primary stickycta__btn"><span>Иду на воркшоп · 15 000 ₽</span></a>
+  </div>
+
   <footer class="footer">
-    <div class="footer__marquee" aria-hidden="true">
-      <div class="footer__marquee-track">
-        <span data-i18n="ft.big">Ксения Теселкина&#160;·&#160;</span><span data-i18n="ft.big2">Ксения Теселкина&#160;·&#160;</span>
+    <div class="footer__bottom footer__bottom--legal">
+      <div class="footer__legal">
+        <a href="#">Оферта</a>
+        <a href="#">Персональные данные</a>
+        <a href="#">Политика возврата</a>
+        <a href="https://t.me/kt_ai_lab" target="_blank" rel="noopener">Telegram @kt_ai_lab</a>
       </div>
-    </div>
-    <div class="footer__bottom">
-      <span data-i18n="ft.copy">© 2026 Ксения Теселкина</span>
-      <span class="footer__note" data-i18n="ft.note">сделано руками, с любовью к деталям</span>
-      <a href="#top" class="footer__up" data-magnetic aria-label="Наверх">↑</a>
+      <span>© 2026 ИП Теселкина Ксения Валерьевна, ИНН 540202590009. Все права защищены. Оплата через ТБанк.</span>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
   <script>
     (function () {
-      // ---- фильтр программ ----
-      var btns = document.querySelectorAll(".filters__btn");
-      var cards = document.querySelectorAll("#programGrid .card");
-      btns.forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          btns.forEach(function (b) { b.classList.remove("is-active"); });
-          btn.classList.add("is-active");
-          var f = btn.getAttribute("data-filter");
-          cards.forEach(function (card) {
-            var show = f === "all" || card.getAttribute("data-format") === f;
-            card.classList.toggle("is-hidden", !show);
-          });
-        });
-      });
+      // ================= НАСТРОЙКИ =================
+      // Ссылка на оплату (ТБанк / платёжная форма). Пока пустая —
+      // форма отправляет заявку письмом. Впишите ссылку, чтобы кнопка
+      // вела сразу на оплату (данные формы добавятся в query-параметры).
+      var PAYMENT_URL = "";
+      // Дата старта потока для обратного отсчёта:
+      var START = new Date("2026-07-28T18:00:00+03:00");
+      // =============================================
+
+      // ---- обратный отсчёт ----
+      var cd = document.getElementById("countdown");
+      function tick() {
+        var diff = START - new Date();
+        if (diff <= 0) { cd.hidden = true; return; }
+        cd.hidden = false;
+        document.getElementById("cdDays").textContent = Math.floor(diff / 86400000);
+        document.getElementById("cdHours").textContent = Math.floor(diff / 3600000) % 24;
+        document.getElementById("cdMins").textContent = Math.floor(diff / 60000) % 60;
+        setTimeout(tick, 30000);
+      }
+      tick();
 
       // ---- аккордеон: закрывать соседей ----
       var items = document.querySelectorAll(".acc__item");
@@ -477,16 +455,32 @@
         });
       });
 
-      // ---- форма → письмо с заявкой ----
+      // ---- липкая CTA после первого экрана ----
+      var sticky = document.getElementById("stickyCta");
+      var signup = document.getElementById("signup");
+      window.addEventListener("scroll", function () {
+        var pastHero = window.scrollY > window.innerHeight * 0.9;
+        var nearForm = signup.getBoundingClientRect().top < window.innerHeight;
+        sticky.classList.toggle("is-visible", pastHero && !nearForm);
+      }, { passive: true });
+
+      // ---- форма ----
       document.getElementById("signupForm").addEventListener("submit", function (e) {
         e.preventDefault();
         var fd = new FormData(e.target);
-        var lang = document.documentElement.lang || "ru";
-        var subject = lang === "ru" ? "Заявка на обучение" : "Training request";
-        var body = (lang === "ru"
-          ? "Имя: " + fd.get("name") + "\nКонтакт: " + fd.get("contact") + "\nЧто интересует: " + (fd.get("about") || "—")
-          : "Name: " + fd.get("name") + "\nContact: " + fd.get("contact") + "\nInterested in: " + (fd.get("about") || "—"));
-        location.href = "mailto:k.tesselkina@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        if (PAYMENT_URL) {
+          var q = new URLSearchParams({
+            name: fd.get("name") || "", email: fd.get("email") || "",
+            telegram: fd.get("telegram") || "", promo: fd.get("promo") || ""
+          });
+          location.href = PAYMENT_URL + (PAYMENT_URL.indexOf("?") > -1 ? "&" : "?") + q.toString();
+          return;
+        }
+        var body = "Заявка на воркшоп «Диаграммы, прототипы и презентации с ИИ»\n\n"
+          + "Имя: " + fd.get("name") + "\nEmail: " + fd.get("email")
+          + "\nTelegram: " + (fd.get("telegram") || "—") + "\nПромокод: " + (fd.get("promo") || "—");
+        location.href = "mailto:k.tesselkina@gmail.com?subject=" + encodeURIComponent("Заявка на воркшоп 28–29 июля")
+          + "&body=" + encodeURIComponent(body);
       });
     })();
   </script>
