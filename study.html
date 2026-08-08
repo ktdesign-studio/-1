@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диаграммы, прототипы и презентации с ИИ — воркшоп для аналитиков</title>
+  <meta name="description" content="Практический воркшоп Ксении Теселкиной: рабочий AI-пайплайн для аналитика — от BPMN и Mermaid до интерфейсных прототипов и графов знаний. 28–29 июля, онлайн.">
+  <meta property="og:title" content="Диаграммы, прототипы и презентации с ИИ для аналитиков">
+  <meta property="og:description" content="Практический воркшоп: перестаньте тратить часы на ручной визуал. 28–29 июля, 18:00–21:00 МСК.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23191324'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23E3FF4F' font-family='Arial' font-weight='bold'>K</text></svg>">
+</head>
+<body class="page-study">
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <a href="#top" class="header__logo" data-magnetic>
+      <span class="header__logo-mark">KT</span>
+      <span class="header__logo-text">AI с Ксенией</span>
+    </a>
+    <nav class="header__nav" aria-label="Основная навигация">
+      <a href="#program" class="header__link">Программа</a>
+      <a href="#results" class="header__link">Результат</a>
+      <a href="#author" class="header__link">Автор</a>
+      <a href="#faq" class="header__link">FAQ</a>
+      <a href="index.html" class="header__link">← Портфолио</a>
+    </nav>
+    <div class="header__right">
+      <a href="#signup" class="btn btn--primary header__cta" data-magnetic><span>Иду на воркшоп</span></a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobmenu" id="mobmenu" aria-hidden="true">
+    <nav class="mobmenu__nav">
+      <a href="#program" class="mobmenu__link">Программа</a>
+      <a href="#results" class="mobmenu__link">Результат</a>
+      <a href="#author" class="mobmenu__link">Автор</a>
+      <a href="#faq" class="mobmenu__link">FAQ</a>
+      <a href="#signup" class="mobmenu__link">Записаться</a>
+      <a href="index.html" class="mobmenu__link">← Портфолио</a>
+    </nav>
+    <div class="mobmenu__footer">
+      <a href="https://t.me/kt_ai_lab" target="_blank" rel="noopener">Telegram</a>
+      <a href="mailto:k.tesselkina@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="shero">
+      <div class="shero__inner">
+        <div class="lhero__badge reveal-line">
+          <span class="lhero__pulse" aria-hidden="true"></span>
+          <span>Ближайший поток — 28 и 29 июля · 18:00–21:00 МСК · онлайн</span>
+        </div>
+        <h1 class="shero__title lhero__title">
+          <span class="hero__title-line"><span class="hero__title-word">Диаграммы, прототипы</span></span>
+          <span class="hero__title-line"><span class="hero__title-word">и презентации <em class="lhero__em">с ИИ</em></span></span>
+          <span class="hero__title-line"><span class="hero__title-word hero__title-word--outline">для аналитиков</span></span>
+        </h1>
+        <p class="hero__sub shero__sub reveal">Практический воркшоп о том, как перестать тратить часы на ручной визуал и собрать рабочий AI-пайплайн: от BPMN и Mermaid до интерфейсных прототипов и графов знаний.</p>
+        <div class="hero__cta reveal">
+          <a href="#signup" class="btn btn--primary" data-magnetic><span>Иду на воркшоп</span><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#program" class="btn btn--ghost" data-magnetic><span>Посмотреть программу</span></a>
+        </div>
+        <div class="lhero__meta reveal">
+          <div class="lhero__countdown" id="countdown" hidden>
+            <span class="lhero__countdown-label">до старта</span>
+            <span class="lhero__countdown-num" id="cdDays">0</span><span class="lhero__countdown-u">дн</span>
+            <span class="lhero__countdown-num" id="cdHours">0</span><span class="lhero__countdown-u">ч</span>
+            <span class="lhero__countdown-num" id="cdMins">0</span><span class="lhero__countdown-u">мин</span>
+          </div>
+          <div class="hero__stats lhero__stats">
+            <div class="stat"><span class="stat__num">2010</span><span class="stat__label">в IT с этого года</span></div>
+            <div class="stat"><span class="stat__num" data-count="10" data-suffix="+">0</span><span class="stat__label">курсов для аналитиков</span></div>
+            <div class="stat"><span class="stat__num" data-count="300" data-suffix="+">0</span><span class="stat__label">довольных учеников</span></div>
+          </div>
+        </div>
+      </div>
+      <svg class="shero__scribble" viewBox="0 0 600 400" fill="none" aria-hidden="true">
+        <path class="hero__scribble-path" d="M40 320 C 120 180, 280 160, 300 280 C 320 400, 140 420, 130 300 C 120 180, 320 100, 460 150 C 560 190, 580 300, 500 340" stroke="currentColor" stroke-width="40" stroke-linecap="round"/>
+      </svg>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>BPMN</span><i>✳</i><span>Mermaid</span><i>✳</i><span>UML</span><i>✳</i><span>C4</span><i>✳</i><span>User Flow</span><i>✳</i><span>Wireframe</span><i>✳</i><span>Прототипы</span><i>✳</i><span>Презентации</span><i>✳</i><span>Графы знаний</span><i>✳</i><span>AI-пайплайн</span><i>✳</i>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>BPMN</span><i>✳</i><span>Mermaid</span><i>✳</i><span>UML</span><i>✳</i><span>C4</span><i>✳</i><span>User Flow</span><i>✳</i><span>Wireframe</span><i>✳</i><span>Прототипы</span><i>✳</i><span>Презентации</span><i>✳</i><span>Графы знаний</span><i>✳</i><span>AI-пайплайн</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PAIN ============ -->
+    <section class="section pain">
+      <div class="pain__grid">
+        <div>
+          <span class="section__num">01</span>
+          <h2 class="section__title reveal-words">Вы понимаете задачу за час, а оформляете её до ночи…</h2>
+        </div>
+        <div class="pain__text">
+          <p class="reveal">Вы уже поняли процесс. У вас в голове готовая логика, связи, крайние случаи.</p>
+          <p class="reveal">А дальше начинается другая работа. Открыть draw.io и двигать прямоугольники, чтобы линии не пересекались. Перенести ту же логику в sequence-диаграмму. Нарисовать с десяток экранов в разных состояниях. Упаковать всё в презентацию, потому что на Zoom'е без слайдов не слушают.</p>
+          <p class="pain__accent reveal">Самая ценная часть работы — анализ — занимает у вас час. А оформление, в котором уже нет никакой мысли, съедает вечер. И так в каждой задаче.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FIT ============ -->
+    <section class="section fit">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title reveal-words">Честно: кому это точно зайдёт, а кому — нет</h2>
+        <p class="section__sub reveal">Чтобы вы не потратили 15 000 ₽ зря — прочитайте эти списки.</p>
+      </div>
+      <div class="fit__grid">
+        <div class="fit__col fit__col--yes reveal" data-tilt>
+          <h3 class="fit__title"><span class="fit__mark fit__mark--yes">✓</span>Зайдёт, если:</h3>
+          <ul>
+            <li>вы системный, продуктовый, бизнес-аналитик или менеджер продукта — и BPMN/UML/wireframe ваша рутина</li>
+            <li>вы уже пробовали ChatGPT для работы, но результат был «ну такое» — и бросили</li>
+            <li>вы хотите за 2 вечера получить готовый пайплайн: от заметок до диаграмм и слайдов</li>
+            <li>вы устали от ручной работы в Figma / draw.io / PowerPoint и хотите убрать оттуда 80% рутины</li>
+            <li>у вас нет дизайнера под боком, а презентацию или схему сдавать уже завтра</li>
+          </ul>
+        </div>
+        <div class="fit__col fit__col--no reveal" data-tilt>
+          <h3 class="fit__title"><span class="fit__mark fit__mark--no">✗</span>Скорее не ваш вариант, если:</h3>
+          <ul>
+            <li>вы ищете базовый курс по нотациям — BPMN/UML с нуля (здесь про ускорение, не про основы)</li>
+            <li>вы ждёте «курс по ChatGPT в целом» без привязки к задачам аналитика</li>
+            <li>вы готовы только смотреть — воркшоп практический, будем делать в прямом эфире</li>
+            <li>у вас уже выстроен AI-пайплайн в команде и дизайнер решает визуал</li>
+            <li>вы не готовы поставить 2–3 AI-сервиса (все бесплатные тарифы подойдут, но аккаунты нужны)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPEED / RESULTS ============ -->
+    <section class="section speed" id="results">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title reveal-words">Что вы сможете создавать за минуты</h2>
+        <p class="section__sub reveal">Вместо часов ручной отрисовки — быстрые и структурные черновики, готовые для обсуждения с командой.</p>
+      </div>
+      <div class="speed__cards">
+        <div class="speedcard reveal" data-tilt>
+          <span class="speedcard__time">2 мин</span>
+          <h3>Диаграмма из текстового ТЗ</h3>
+          <p>Sequence-диаграмма из текстового ТЗ — вместо часа в draw.io.</p>
+        </div>
+        <div class="speedcard speedcard--accent reveal" data-tilt>
+          <span class="speedcard__time">5 мин</span>
+          <h3>Wireframe экранов</h3>
+          <p>Wireframe ключевых экранов прямо из требований.</p>
+        </div>
+        <div class="speedcard reveal" data-tilt>
+          <span class="speedcard__time">3 мин</span>
+          <h3>Слайд для стейкхолдера</h3>
+          <p>Слайд презентации из аналитического материала.</p>
+        </div>
+      </div>
+      <div class="speed__list reveal">
+        <h3 class="speed__list-title">Что заберёт на себя ИИ:</h3>
+        <ul>
+          <li>BPMN и sequence из текста — за минуты, не часы</li>
+          <li>Wireframe экранов по описанию требований</li>
+          <li>Структура и черновик слайдов для стейкхолдеров</li>
+          <li>Перевод логики между нотациями без ручного переписывания</li>
+          <li>Граф знаний из сырых требований</li>
+        </ul>
+        <p class="speed__free">А у вас появляется свободное время — на себя, детей и хобби ✳</p>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAM ============ -->
+    <section class="section program" id="program">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title reveal-words">Программа воркшопа</h2>
+        <p class="section__sub reveal">Работаем на сквозном кейсе: мобильное приложение для создания клубов по интересам.</p>
+      </div>
+
+      <div class="days">
+        <article class="day reveal">
+          <header class="day__head">
+            <span class="day__label">День 1</span>
+            <h3 class="day__title">Диаграммы и прототипы</h3>
+            <span class="day__date">28 июля · 18:00–21:00 МСК</span>
+          </header>
+          <div class="day__modules">
+            <div class="module">
+              <span class="module__num">1</span>
+              <div>
+                <h4>Системы и процессы</h4>
+                <ul>
+                  <li>BPMN, Mermaid, UML, C4, user flow</li>
+                  <li>Подходы text-to-diagram и diagram-as-code</li>
+                  <li><b>Практика:</b> сборка BPMN процесса и перевод в UML для другой аудитории</li>
+                </ul>
+              </div>
+            </div>
+            <div class="module">
+              <span class="module__num">2</span>
+              <div>
+                <h4>Прототипы интерфейсов</h4>
+                <ul>
+                  <li>Как превращать user flow в wireframe</li>
+                  <li>Проектирование экранов, UX-паттерны, кликабельные прототипы, дизайн-система</li>
+                  <li><b>Практика:</b> прототипы ключевых экранов (лента, создание клуба)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="day day--accent reveal">
+          <header class="day__head">
+            <span class="day__label">День 2</span>
+            <h3 class="day__title">Презентации и пайплайн</h3>
+            <span class="day__date">29 июля · 18:00–21:00 МСК</span>
+          </header>
+          <div class="day__modules">
+            <div class="module">
+              <span class="module__num">3</span>
+              <div>
+                <h4>Презентации и графы знаний</h4>
+                <ul>
+                  <li>Презентация проекта и отчёт о проделанной работе из заметок и требований</li>
+                  <li>Граф сущностей: роли, связи, зависимости</li>
+                  <li><b>Практика:</b> сборка мини-презентации и графа знаний приложения</li>
+                </ul>
+              </div>
+            </div>
+            <div class="module">
+              <span class="module__num">4</span>
+              <div>
+                <h4>Рабочий AI-пайплайн</h4>
+                <ul>
+                  <li>Сборка инструментов в единый экономящий время процесс</li>
+                  <li>Чеклист ревью AI-сгенерированных артефактов, авто-ревью</li>
+                  <li><b>Финал:</b> готовый процесс применения ИИ в вашей работе, рекомендации по адаптации под ваши проекты</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="outcome reveal">
+        <h3 class="outcome__title">На выходе у вас будет</h3>
+        <ul class="outcome__list">
+          <li>BPMN из текстовых требований</li>
+          <li>Сгенерированные диаграммы UML и C4</li>
+          <li>Wireframe экранов</li>
+          <li>10-слайдовая презентация для стейкхолдера</li>
+          <li>ИИ-агент, которого можно донастроить под ваш проект</li>
+        </ul>
+        <p class="outcome__note">Всё — в вашей папке, всё — сделано вашими руками.</p>
+      </div>
+
+      <div class="tools reveal">
+        <div class="tools__col">
+          <h3 class="tools__title">В чём работаем — любая IDE с ИИ:</h3>
+          <div class="tools__chips">
+            <span>Claude Cowork</span><span>Cursor</span><span>Codex</span><span>VS Code + Qwen</span>
+          </div>
+        </div>
+        <div class="tools__col">
+          <h3 class="tools__title">Сравним с альтернативами:</h3>
+          <div class="tools__chips tools__chips--alt">
+            <span>NotebookLM</span><span>Google Stitch</span><span>Claude Design</span><span>Figma Make</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AUTHOR ============ -->
+    <section class="section author" id="author">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title reveal-words">Кто ведёт воркшоп</h2>
+      </div>
+      <div class="author__grid">
+        <div class="author__photo-col reveal" data-tilt>
+          <figure class="photo photo--about">
+            <img src="assets/img/about.webp" alt="Ксения Теселкина" loading="lazy">
+            <figcaption class="photo__ph" aria-hidden="true"><span class="photo__ph-label">about.webp</span></figcaption>
+          </figure>
+        </div>
+        <div class="author__body">
+          <h3 class="author__name reveal">Ксения Теселкина</h3>
+          <p class="author__meta reveal">15+ лет в IT · VK, 2GIS, экосистемные сервисы · руководила отделом аналитиков · 40+ проектов</p>
+          <ul class="author__facts">
+            <li class="fact reveal">
+              <span class="fact__k">Продукт</span>
+              <span class="fact__v">Старший менеджер продукта в VK: управление комплексными продуктами и командами</span>
+            </li>
+            <li class="fact reveal">
+              <span class="fact__k">Анализ</span>
+              <span class="fact__v">Фулстек-аналитик с опытом 15+ лет: огромный бэкграунд на разных аналитических ролях</span>
+            </li>
+            <li class="fact reveal">
+              <span class="fact__k">Кругозор</span>
+              <span class="fact__v">Экосистемные сервисы, e-commerce, финтех и применение нейросетей в анализе</span>
+            </li>
+          </ul>
+          <a href="https://t.me/kt_ai_lab" target="_blank" rel="noopener" class="btn btn--ghost reveal" data-magnetic><span>Читать разборы кейсов в Telegram → @kt_ai_lab</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="section__head">
+        <span class="section__num">06</span>
+        <h2 class="section__title reveal-words">Частые вопросы</h2>
+      </div>
+      <div class="acc">
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Будет ли запись воркшопа?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Да, запись обоих дней входит в стоимость — вместе с презентацией, чеклистами и шаблонами промптов она останется у вас навсегда.</p>
+        </details>
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Нужен ли опыт с BPMN / UML / wireframe?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Да, базовый: воркшоп про ускорение работы с нотациями, а не про их изучение с нуля. Если BPMN/UML/wireframe — ваша рутина, вам подойдёт.</p>
+        </details>
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Нужны ли платные подписки на AI-сервисы?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Нет, бесплатных тарифов достаточно. Понадобится заранее зарегистрировать аккаунты в 2–3 AI-сервисах — пришлю список после оплаты.</p>
+        </details>
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Можно оплатить от ИП или юрлица?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Да, работаю как ИП — выставлю счёт и закрывающие документы. Напишите в Telegram @kt_ai_lab, согласуем детали.</p>
+        </details>
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Что, если я пропущу один из дней?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Ничего страшного: посмотрите запись, а вопросы по практике зададите на втором дне или в чате — обратная связь по вашим артефактам входит в воркшоп.</p>
+        </details>
+        <details class="acc__item reveal">
+          <summary class="acc__q"><span>Что, если воркшоп не подойдёт?</span><span class="acc__icon" aria-hidden="true">+</span></summary>
+          <p class="acc__a">Действует политика возврата — условия описаны в оферте. Если сомневаетесь, начните со списков «кому зайдёт / кому нет» выше или напишите мне в Telegram.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ SIGNUP ============ -->
+    <section class="section signup" id="signup">
+      <div class="signup__inner">
+        <div class="signup__left">
+          <span class="section__num section__num--light">07</span>
+          <h2 class="channel__title reveal-words">Готовы ускорить свою работу?</h2>
+          <p class="channel__desc reveal">Ближайший поток: <b>28 и 29 июля, 18:00–21:00 МСК</b>, онлайн.</p>
+          <ul class="signup__includes reveal">
+            <li>2 дня практических онлайн-сессий</li>
+            <li>Готовые шаблоны промптов</li>
+            <li>Чеклисты, презентация и запись воркшопа</li>
+            <li>Обратная связь по вашим артефактам</li>
+          </ul>
+          <p class="signup__after reveal">После оплаты вы получите чек на email и инструкции по доступу к материалам.</p>
+        </div>
+        <form class="sform reveal" id="signupForm">
+          <label class="sform__field">
+            <span class="sform__label">Имя и Фамилия</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Иван Иванов">
+          </label>
+          <label class="sform__field">
+            <span class="sform__label">Email</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="name@company.ru">
+          </label>
+          <label class="sform__field">
+            <span class="sform__label">Telegram (необязательно)</span>
+            <input type="text" name="telegram" placeholder="@username или +7 ...">
+          </label>
+          <label class="sform__field">
+            <span class="sform__label">Промокод (если есть)</span>
+            <input type="text" name="promo" placeholder="ВВЕДИТЕ ПРОМОКОД">
+          </label>
+          <div class="sform__price">
+            <span>К оплате:</span>
+            <strong>15 000 ₽</strong>
+            <small>Оплата через ТБанк · можно частями без переплат</small>
+          </div>
+          <button type="submit" class="btn btn--primary sform__submit" data-magnetic><span>Оплатить участие — 15 000 ₽</span><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="sform__note">Нажимая кнопку, вы соглашаетесь с условиями <a href="#">Оферты</a>, <a href="#">Политикой обработки ПД</a> и <a href="#">возврата средств</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky CTA (mobile) -->
+  <div class="stickycta" id="stickyCta" aria-hidden="true">
+    <div class="stickycta__text"><b>28–29 июля</b> · 18:00 МСК</div>
+    <a href="#signup" class="btn btn--primary stickycta__btn"><span>Иду на воркшоп · 15 000 ₽</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__bottom footer__bottom--legal">
+      <div class="footer__legal">
+        <a href="#">Оферта</a>
+        <a href="#">Персональные данные</a>
+        <a href="#">Политика возврата</a>
+        <a href="https://t.me/kt_ai_lab" target="_blank" rel="noopener">Telegram @kt_ai_lab</a>
+      </div>
+      <span>© 2026 ИП Теселкина Ксения Валерьевна, ИНН 540202590009. Все права защищены. Оплата через ТБанк.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      // ================= НАСТРОЙКИ =================
+      // Ссылка на оплату (ТБанк / платёжная форма). Пока пустая —
+      // форма отправляет заявку письмом. Впишите ссылку, чтобы кнопка
+      // вела сразу на оплату (данные формы добавятся в query-параметры).
+      var PAYMENT_URL = "";
+      // Дата старта потока для обратного отсчёта:
+      var START = new Date("2026-07-28T18:00:00+03:00");
+      // =============================================
+
+      // ---- обратный отсчёт ----
+      var cd = document.getElementById("countdown");
+      function tick() {
+        var diff = START - new Date();
+        if (diff <= 0) { cd.hidden = true; return; }
+        cd.hidden = false;
+        document.getElementById("cdDays").textContent = Math.floor(diff / 86400000);
+        document.getElementById("cdHours").textContent = Math.floor(diff / 3600000) % 24;
+        document.getElementById("cdMins").textContent = Math.floor(diff / 60000) % 60;
+        setTimeout(tick, 30000);
+      }
+      tick();
+
+      // ---- аккордеон: закрывать соседей ----
+      var items = document.querySelectorAll(".acc__item");
+      items.forEach(function (d) {
+        d.addEventListener("toggle", function () {
+          if (d.open) items.forEach(function (o) { if (o !== d) o.open = false; });
+        });
+      });
+
+      // ---- липкая CTA после первого экрана ----
+      var sticky = document.getElementById("stickyCta");
+      var signup = document.getElementById("signup");
+      window.addEventListener("scroll", function () {
+        var pastHero = window.scrollY > window.innerHeight * 0.9;
+        var nearForm = signup.getBoundingClientRect().top < window.innerHeight;
+        sticky.classList.toggle("is-visible", pastHero && !nearForm);
+      }, { passive: true });
+
+      // ---- форма ----
+      document.getElementById("signupForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var fd = new FormData(e.target);
+        if (PAYMENT_URL) {
+          var q = new URLSearchParams({
+            name: fd.get("name") || "", email: fd.get("email") || "",
+            telegram: fd.get("telegram") || "", promo: fd.get("promo") || ""
+          });
+          location.href = PAYMENT_URL + (PAYMENT_URL.indexOf("?") > -1 ? "&" : "?") + q.toString();
+          return;
+        }
+        var body = "Заявка на воркшоп «Диаграммы, прототипы и презентации с ИИ»\n\n"
+          + "Имя: " + fd.get("name") + "\nEmail: " + fd.get("email")
+          + "\nTelegram: " + (fd.get("telegram") || "—") + "\nПромокод: " + (fd.get("promo") || "—");
+        location.href = "mailto:k.tesselkina@gmail.com?subject=" + encodeURIComponent("Заявка на воркшоп 28–29 июля")
+          + "&body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>
